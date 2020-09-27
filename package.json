@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "admin-lte": "^3.0.5",
+    "bootstrap": "^4.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
@@ -10,7 +12,9 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
-    "@testing-library/user-event": "^12.1.6"
+    "@testing-library/user-event": "^12.1.6",
+    "eslint-config-airbnb": "^18.2.0",
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "start": "react-scripts start",

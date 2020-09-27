@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "react-app",
+        "airbnb"
+    ],
+    "ignorePatterns": [
+        "*.scss",
+        "*.png"
+    ],
+    "rules": {
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "./mock-api/**/*.js",
+                    "**/*.test.js",
+                    "**/*.test.jsx"
+                ]
+            }
+        ]
+    }
+}
