@@ -1,18 +1,5 @@
-# react-lte
+The MIT License (MIT)
 
-AdminLTE v3 implementation for ReactJS.
-Other react-ported AdminLTE repositories are either inactive or based on AdminLTE v2.
-That's why this repository was created.
-
-
-## License
-This project is released under [MIT](https://opensource.org/licenses/MIT) license.
-See [LICENSE](https://github.com/pattisahusiwa/react-lte/blob/master/LICENSE) file for more details.
-
-For the original AdminLTE license, see [AdminLTE](https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
-
-
-````txt
 Copyright (c) 2020 Asis Pattisahusiwa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -31,4 +18,3 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-````
