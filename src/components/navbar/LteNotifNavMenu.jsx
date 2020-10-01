@@ -5,10 +5,10 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 import LteNavDropdown from './LteNavDropdown';
 
 const Content = ({ data }) => data.map(({
-  id, message, date,
+  id, href, message, date,
 }) => (
   <>
-    <DropdownItem key={id} tag="a">
+    <DropdownItem key={id} tag="a" href={href}>
       {message}
       <span className="float-right text-muted text-sm">{date}</span>
     </DropdownItem>
@@ -32,6 +32,7 @@ LteNotifNavMenu.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.ID,
+      href: PropTypes.string,
       message: PropTypes.node,
       date: PropTypes.date,
     }),

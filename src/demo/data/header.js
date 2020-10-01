@@ -30,16 +30,19 @@ const messageNavData = [
 const notifNavData = [
   {
     id: 1,
+    href: '#',
     message: '4 new messages',
     date: '3 mins',
   },
   {
     id: 2,
+    href: '#',
     message: '8 friend requests',
     date: '12 hours',
   },
   {
     id: 3,
+    href: '#',
     message: '3 new reports',
     date: '2 days',
   },
