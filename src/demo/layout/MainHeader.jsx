@@ -7,7 +7,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteMessageNavMenu from '../../components/navbar/LteMessageNavMenu';
-import messageNavData from '../data/header';
+import { messageNavData, notifNavData } from '../data/header';
+import LteNotifNavMenu from '../../components/navbar/LteNotifNavMenu';
 
 export default function MainHeader() {
   return (
@@ -41,6 +42,7 @@ export default function MainHeader() {
 
       <Nav navbar className="ml-auto">
         <LteMessageNavMenu data={messageNavData} />
+        <LteNotifNavMenu data={notifNavData} />
         <NavItem>
           <NavLink tag="button" className="btn" data-widget="fullscreen">
             <FontAwesomeIcon icon={faExpandArrowsAlt} />

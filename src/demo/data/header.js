@@ -24,4 +24,22 @@ const messageNavData = [
   },
 ];
 
-export default messageNavData;
+const notifNavData = [
+  {
+    id: 1,
+    message: '4 new messages',
+    date: '3 mins',
+  },
+  {
+    id: 2,
+    message: '8 friend requests',
+    date: '12 hours',
+  },
+  {
+    id: 3,
+    message: '3 new reports',
+    date: '2 days',
+  },
+];
+
+export { messageNavData, notifNavData };
