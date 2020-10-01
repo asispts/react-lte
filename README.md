@@ -1,6 +1,6 @@
-# `react-lte` - AdminLTE v3 administrator template for ReactJS
+# `react-lte` - AdminLTE v3 template for ReactJS
 
-- [`react-lte` - AdminLTE v3 administrator template for ReactJS](#react-lte---adminlte-v3-administrator-template-for-reactjs)
+- [`react-lte` - AdminLTE v3 template for ReactJS](#react-lte---adminlte-v3-template-for-reactjs)
   - [Demo](#demo)
   - [Installation](#installation)
     - [Install with `npm`](#install-with-npm)
