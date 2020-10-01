@@ -1,7 +1,36 @@
 {
   "name": "react-lte",
+  "description": "AdminLTE v3 template for ReactJS",
+  "keywords": [
+    "AdminLTE",
+    "admin-lte",
+    "react",
+    "reactjs",
+    "admin",
+    "administrator",
+    "template",
+    "bootstrap",
+    "reactstrap",
+    "component",
+    "components",
+    "react-component",
+    "ui"
+  ],
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Asis Pattisahusiwa",
+    "email": "asis.pattisahusiwa@gmail.com",
+    "url": "https://github.com/pattisahusiwa"
+  },
+  "homepage": "https://pattisahusiwa.github.io/react-lte",
+  "repository": {
+    "url": "https://github.com/pattisahusiwa/react-lte"
+  },
+  "bugs": {
+    "url": "https://github.com/pattisahusiwa/react-lte/issues"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.31",
     "@fortawesome/free-solid-svg-icons": "^5.15.0",
@@ -26,7 +55,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
