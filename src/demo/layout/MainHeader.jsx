@@ -2,8 +2,12 @@ import React from 'react';
 import {
   Form, Input, InputGroup, InputGroupAddon, Nav, NavItem, NavLink,
 } from 'reactstrap';
-import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars, faExpandArrowsAlt, faSearch, faThLarge,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import LteMessageNavMenu from '../../components/navbar/LteMessageNavMenu';
+import messageNavData from '../data/header';
 
 export default function MainHeader() {
   return (
@@ -34,6 +38,20 @@ export default function MainHeader() {
           </InputGroupAddon>
         </InputGroup>
       </Form>
+
+      <Nav navbar className="ml-auto">
+        <LteMessageNavMenu data={messageNavData} />
+        <NavItem>
+          <NavLink tag="button" className="btn" data-widget="fullscreen">
+            <FontAwesomeIcon icon={faExpandArrowsAlt} />
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink tag="button" className="btn" data-widget="control-sidebar" data-slide="true">
+            <FontAwesomeIcon icon={faThLarge} />
+          </NavLink>
+        </NavItem>
+      </Nav>
     </nav>
   );
 }
