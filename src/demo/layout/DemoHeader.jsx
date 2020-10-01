@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import {
   faExpandArrowsAlt, faThLarge,
@@ -16,10 +17,10 @@ export default function DemoHeader() {
     <LteMainHeader>
       <LteToggler>
         <NavItem className="d-none d-sm-inline-block">
-          <NavLink href="/">Home</NavLink>
+          <NavLink tag={Link} to="/">Home</NavLink>
         </NavItem>
         <NavItem className="d-none d-sm-inline-block">
-          <NavLink href="/">Contact</NavLink>
+          <NavLink href="#">Contact</NavLink>
         </NavItem>
       </LteToggler>
 

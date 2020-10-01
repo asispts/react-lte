@@ -7,7 +7,7 @@ const sidebarMenu = [
   {
     id: 2,
     text: 'Widgets',
-    href: '/',
+    href: '/widgets',
     badge: 'New',
   },
   {

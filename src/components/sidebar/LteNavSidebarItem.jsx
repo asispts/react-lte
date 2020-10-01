@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { NavItem, NavLink } from 'reactstrap';
 import LteIcon from '../LteIcon';
@@ -10,7 +11,7 @@ export default function LteNavSidebarItem({ data }) {
     id, text, href, icon, badge,
   }) => (
     <NavItem key={id}>
-      <NavLink href={href}>
+      <NavLink tag={Link} to={href}>
         <LteIcon icon={icon} className="nav-icon" />
         <p>
           {text}
