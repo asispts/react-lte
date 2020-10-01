@@ -10,7 +10,7 @@ import LteMessageNavMenu from '../../components/navbar/LteMessageNavMenu';
 import { messageNavData, notifNavData } from '../data/header';
 import LteNotifNavMenu from '../../components/navbar/LteNotifNavMenu';
 
-export default function MainHeader() {
+export default function DemoHeader() {
   return (
     <nav className="main-header navbar navbar-expand navbar-white navbar-light">
       <Nav navbar>
