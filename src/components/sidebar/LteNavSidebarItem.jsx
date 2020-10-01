@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavItem, NavLink } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import LteIcon from '../LteIcon';
 
 const Badge = ({ badge }) => (badge === '' ? null : <span className="right badge badge-danger">{badge}</span>);
 
@@ -11,7 +11,7 @@ export default function LteNavSidebarItem({ data }) {
   }) => (
     <NavItem key={id}>
       <NavLink href={href}>
-        <FontAwesomeIcon icon={icon} className="nav-icon" />
+        <LteIcon icon={icon} className="nav-icon" />
         <p>
           {text}
           <Badge badge={badge} />

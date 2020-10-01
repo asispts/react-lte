@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Nav, NavItem } from 'reactstrap';
+import LteIcon from '../LteIcon';
 
 export default function LteToggler({ children }) {
   return (
     <Nav navbar>
       <NavItem>
         <button className="btn nav-link" data-widget="pushmenu" type="button">
-          <FontAwesomeIcon icon={faBars} />
+          <LteIcon icon={faBars} />
           <span className="d-none">toggle</span>
         </button>
       </NavItem>

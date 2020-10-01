@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Badge, Dropdown, DropdownMenu, DropdownToggle,
 } from 'reactstrap';
+import LteIcon from '../LteIcon';
 
 export default function LteNavDropdown({ icon, badgeText, children }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -12,7 +12,7 @@ export default function LteNavDropdown({ icon, badgeText, children }) {
   return (
     <Dropdown tag="li" isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle nav>
-        <FontAwesomeIcon icon={icon} />
+        <LteIcon icon={icon} />
         <Badge color="danger" className="navbar-badge">{badgeText}</Badge>
       </DropdownToggle>
       <DropdownMenu right className="dropdown-menu-lg">

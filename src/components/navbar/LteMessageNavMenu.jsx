@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { faClock, faComments, faStar } from '@fortawesome/free-solid-svg-icons';
 import { DropdownItem, Media } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteNavDropdown from './LteNavDropdown';
+import LteIcon from '../LteIcon';
 
 const Content = ({ data }) => data.map(({
   id, href, avatar, user, message, date,
@@ -16,12 +16,12 @@ const Content = ({ data }) => data.map(({
           <h3 className="dropdown-item-title">
             {user}
             <span className="float-right text-sm text-danger">
-              <FontAwesomeIcon icon={faStar} />
+              <LteIcon icon={faStar} />
             </span>
           </h3>
           <p className="text-sm">{message}</p>
           <p className="text-sm text-muted">
-            <FontAwesomeIcon icon={faClock} />
+            <LteIcon icon={faClock} />
             <span className="ml-1">{date}</span>
           </p>
         </Media>

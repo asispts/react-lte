@@ -3,13 +3,13 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import {
   faExpandArrowsAlt, faThLarge,
 } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteMessageNavMenu from '../../components/navbar/LteMessageNavMenu';
 import { messageNavData, notifNavData } from '../data/header';
 import LteNotifNavMenu from '../../components/navbar/LteNotifNavMenu';
 import LteMainHeader from '../../components/navbar/LteMainHeader';
 import LteNavSearch from '../../components/navbar/LteNavSearch';
 import LteToggler from '../../components/navbar/LteToggler';
+import LteIcon from '../../components/LteIcon';
 
 export default function DemoHeader() {
   return (
@@ -30,12 +30,12 @@ export default function DemoHeader() {
         <LteNotifNavMenu data={notifNavData} />
         <NavItem>
           <NavLink tag="button" className="btn" data-widget="fullscreen">
-            <FontAwesomeIcon icon={faExpandArrowsAlt} />
+            <LteIcon icon={faExpandArrowsAlt} />
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink tag="button" className="btn" data-widget="control-sidebar" data-slide="true">
-            <FontAwesomeIcon icon={faThLarge} />
+            <LteIcon icon={faThLarge} />
           </NavLink>
         </NavItem>
       </Nav>
