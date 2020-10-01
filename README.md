@@ -1,15 +1,15 @@
 # react-lte
+> AdminLTE v3 administrator template for ReactJS
 
-AdminLTE v3 implementation for ReactJS.
-Other react-ported AdminLTE repositories are either inactive or based on AdminLTE v2.
-That's why this repository was created.
+- [react-lte](#react-lte)
+  - [License](#license)
 
 
 ## License
 This project is released under [MIT](https://opensource.org/licenses/MIT) license.
 See [LICENSE](https://github.com/pattisahusiwa/react-lte/blob/master/LICENSE) file for more details.
 
-For the original AdminLTE license, see [AdminLTE](https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
+For the original AdminLTE license, see [AdminLTE license](https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
 
 
 ````txt
