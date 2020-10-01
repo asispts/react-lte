@@ -3,6 +3,7 @@ import { user1, user3, user8 } from './images';
 const messageNavData = [
   {
     id: 1,
+    href: '#',
     avatar: user1,
     user: 'Brad Diesel',
     message: 'Call me whenever you can...',
@@ -10,6 +11,7 @@ const messageNavData = [
   },
   {
     id: 2,
+    href: '#',
     avatar: user8,
     user: 'John Pierce',
     message: 'I got your message bro',
@@ -17,6 +19,7 @@ const messageNavData = [
   },
   {
     id: 3,
+    href: '#',
     avatar: user3,
     user: 'Nora Silvester',
     message: 'The subject goes here',

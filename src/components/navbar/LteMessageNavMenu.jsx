@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteNavDropdown from './LteNavDropdown';
 
 const Content = ({ data }) => data.map(({
-  id, avatar, user, message, date,
+  id, href, avatar, user, message, date,
 }) => (
   <>
-    <DropdownItem key={id} tag="a">
+    <DropdownItem key={id} tag="a" href={href}>
       <Media>
         <img src={avatar} alt="" className="img-size-50 mr-3 img-circle" />
         <Media body>
@@ -31,19 +31,21 @@ const Content = ({ data }) => data.map(({
   </>
 ));
 
-export default function LteMessageNavMenu({ data }) {
+export default function LteMessageNavMenu({ data, href }) {
   return (
     <LteNavDropdown icon={faComments} badgeText={data.length}>
       <Content data={data} />
-      <DropdownItem tag="a" href="#" className="dropdown-footer">See All Messages</DropdownItem>
+      <DropdownItem tag="a" href={href} className="dropdown-footer">See All Messages</DropdownItem>
     </LteNavDropdown>
   );
 }
 
 LteMessageNavMenu.propTypes = {
+  href: PropTypes.string,
   data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.ID,
+      href: PropTypes.string,
       avatar: PropTypes.string,
       user: PropTypes.string,
       message: PropTypes.node,
@@ -53,5 +55,6 @@ LteMessageNavMenu.propTypes = {
 };
 
 LteMessageNavMenu.defaultProps = {
+  href: '#',
   data: [],
 };
