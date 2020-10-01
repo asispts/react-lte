@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Dashboard from './demo/pages/Dashboard';
-import MainHeader from './demo/layout/MainHeader';
-import MainSidebar from './demo/layout/MainSidebar';
-import ContentWrapper from './demo/layout/ContentWrapper';
-import MainFooter from './demo/layout/MainFooter';
+import Dashboard from './pages/Dashboard';
+import MainHeader from './layout/MainHeader';
+import MainSidebar from './layout/MainSidebar';
+import ContentWrapper from './layout/ContentWrapper';
+import MainFooter from './layout/MainFooter';
 
-export default function App() {
+export default function DemoApp() {
   return (
     <Router>
       <MainHeader />
