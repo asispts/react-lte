@@ -8,8 +8,8 @@ import LteNavDropdown from './LteNavDropdown';
 const Content = ({ data }) => data.map(({
   id, href, avatar, user, message, date,
 }) => (
-  <>
-    <DropdownItem key={id} tag="a" href={href}>
+  <span key={id}>
+    <DropdownItem tag="a" href={href}>
       <Media>
         <img src={avatar} alt="" className="img-size-50 mr-3 img-circle" />
         <Media body>
@@ -28,7 +28,7 @@ const Content = ({ data }) => data.map(({
       </Media>
     </DropdownItem>
     <DropdownItem divider />
-  </>
+  </span>
 ));
 
 export default function LteMessageNavMenu({ data, href }) {

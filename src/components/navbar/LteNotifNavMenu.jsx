@@ -7,13 +7,13 @@ import LteNavDropdown from './LteNavDropdown';
 const Content = ({ data }) => data.map(({
   id, href, message, date,
 }) => (
-  <>
-    <DropdownItem key={id} tag="a" href={href}>
+  <span key={id}>
+    <DropdownItem tag="a" href={href}>
       {message}
       <span className="float-right text-muted text-sm">{date}</span>
     </DropdownItem>
     <DropdownItem divider />
-  </>
+  </span>
 ));
 
 export default function LteNotifNavMenu({ data, href }) {
