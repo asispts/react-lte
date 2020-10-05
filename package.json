@@ -16,8 +16,8 @@
     "react-component",
     "ui"
   ],
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.0-alpha",
+  "private": false,
   "license": "MIT",
   "author": {
     "name": "Asis Pattisahusiwa",
