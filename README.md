@@ -1,5 +1,13 @@
 # `react-lte` - AdminLTE v3 template for ReactJS
 
+[![License](https://img.shields.io/github/license/pattisahusiwa/react-lte)](https://github.com/pattisahusiwa/react-lte/blob/master/LICENSE)
+[![gh-pages](https://img.shields.io/github/workflow/status/pattisahusiwa/react-lte/gh-pages%20deploy?label=gh-pages)](https://github.com/pattisahusiwa/react-lte/actions?query=workflow%3A%22gh-pages+deploy%22)
+
+[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/react)]()
+[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/admin-lte)]()
+[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/bootstrap)]()
+[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/reactstrap)]()
+
 - [`react-lte` - AdminLTE v3 template for ReactJS](#react-lte---adminlte-v3-template-for-reactjs)
   - [Demo](#demo)
   - [Installation](#installation)
