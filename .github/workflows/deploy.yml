@@ -21,9 +21,9 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install PNPM
-        uses: pnpm/action-setup@v1.2.0
+        uses: pnpm/action-setup@v1.2.1
         with:
-          version: 5.7.0
+          version: 5.x.x
 
       - name: Cache NPM packages
         id: npm-packages-cache
