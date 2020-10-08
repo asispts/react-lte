@@ -16,7 +16,7 @@
     "react-component",
     "ui"
   ],
-  "version": "0.1.0-alpha",
+  "version": "0.1.0-dev",
   "private": false,
   "license": "MIT",
   "author": {
