@@ -1,22 +1,17 @@
 {
-    "extends": [
-        "react-app",
-        "airbnb"
-    ],
-    "ignorePatterns": [
-        "*.scss",
-        "*.png"
-    ],
-    "rules": {
-        "import/no-extraneous-dependencies": [
-            "error",
-            {
-                "devDependencies": [
-                    "./mock-api/**/*.js",
-                    "**/*.test.js",
-                    "**/*.test.jsx"
-                ]
-            }
+  "extends": ["react-app", "airbnb", "prettier"],
+  "plugins": ["prettier", "simple-import-sort"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "./mock-api/**/*.js",
+          "**/*.test.js",
+          "**/*.test.jsx"
         ]
-    }
+      }
+    ]
+  }
 }
