@@ -18,7 +18,6 @@
     - [Install with `pnpm`](#install-with-pnpm)
   - [Changelog](#changelog)
   - [Contributing](#contributing)
-    - [Prerequisite](#prerequisite)
     - [How to contribute](#how-to-contribute)
   - [License](#license)
 
@@ -50,7 +49,7 @@ pnpm add react-lte
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/pattisahusiwa/react-lte/blob/master/CHANGELOG.md)
+See [CHANGELOG.md](./CHANGELOG.md)
 
 ## Contributing
 
@@ -60,27 +59,19 @@ For major changes, please open an issue first to discuss what you would like to 
 
 Please make sure to update tests as appropriate.
 
-### Prerequisite
-
-This repository uses 2 global packages which should be installed first:
-
-1. `pnpm` as a package manager. Please [check this page](https://pnpm.js.org/en/installation) to learn how to install the tool.
-2. `eslint`.
-
 ### How to contribute
 
 1. Fork and clone the repository,
-2. Install package dependencies
+2. Install package dependencies using `pnpm`
    ```bash
    pnpm install
    ```
-3. Create a new git branch,
-4. Make a necessary change, add unit test, commit, and submit PR.
-5. All submitted code should not have linter issues.
+3. Create a new git branch, make a necessary change, add unit test, commit, and submit PR.
+4. Run `pnpm cs` or `pnpm lint` to check coding style or linter issues. The issues can be fixed by running `pnpm cs:fix` or `pnpm lint:fix`
 
 ## License
 
 This project is released under [MIT](https://opensource.org/licenses/MIT) license.
-See [LICENSE](https://github.com/pattisahusiwa/react-lte/blob/master/LICENSE) file for more details.
+See [LICENSE](./LICENSE) file for more details.
 
 For the original AdminLTE license, see [AdminLTE license](https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE).
