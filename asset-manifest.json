@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-lte/static/css/main.28d327db.chunk.css",
+    "main.css": "/react-lte/static/css/main.89967c35.chunk.css",
     "main.js": "/react-lte/static/js/main.3b9251b8.chunk.js",
     "main.js.map": "/react-lte/static/js/main.3b9251b8.chunk.js.map",
     "runtime-main.js": "/react-lte/static/js/runtime-main.f2806703.js",
@@ -8,16 +8,16 @@
     "static/js/2.83fdd80c.chunk.js": "/react-lte/static/js/2.83fdd80c.chunk.js",
     "static/js/2.83fdd80c.chunk.js.map": "/react-lte/static/js/2.83fdd80c.chunk.js.map",
     "index.html": "/react-lte/index.html",
-    "precache-manifest.9845415af7f0a4174142dcf41081e03c.js": "/react-lte/precache-manifest.9845415af7f0a4174142dcf41081e03c.js",
+    "precache-manifest.2fbbe8387c6faca2ed9fd6f6f8e7e207.js": "/react-lte/precache-manifest.2fbbe8387c6faca2ed9fd6f6f8e7e207.js",
     "service-worker.js": "/react-lte/service-worker.js",
-    "static/css/main.28d327db.chunk.css.map": "/react-lte/static/css/main.28d327db.chunk.css.map",
+    "static/css/main.89967c35.chunk.css.map": "/react-lte/static/css/main.89967c35.chunk.css.map",
     "static/js/2.83fdd80c.chunk.js.LICENSE.txt": "/react-lte/static/js/2.83fdd80c.chunk.js.LICENSE.txt",
     "static/media/AdminLTELogo.png": "/react-lte/static/media/AdminLTELogo.28f7e31d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f2806703.js",
     "static/js/2.83fdd80c.chunk.js",
-    "static/css/main.28d327db.chunk.css",
+    "static/css/main.89967c35.chunk.css",
     "static/js/main.3b9251b8.chunk.js"
   ]
 }
