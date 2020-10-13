@@ -4,11 +4,9 @@ import LteBrand from './LteBrand';
 
 export default function LteMainSidebar({ logo, brandName, children }) {
   return (
-    <aside className="main-sidebar sidebar-dark-primary elevation-4">
+    <aside className='main-sidebar sidebar-dark-primary elevation-4'>
       <LteBrand logo={logo} name={brandName} />
-      <section className="sidebar">
-        {children}
-      </section>
+      <section className='sidebar'>{children}</section>
     </aside>
   );
 }

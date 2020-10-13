@@ -3,8 +3,12 @@ import PropTypes from 'prop-types';
 
 export default function LteNavSidebar({ children }) {
   return (
-    <nav className="mt-2">
-      <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    <nav className='mt-2'>
+      <ul
+        className='nav nav-pills nav-sidebar flex-column'
+        data-widget='treeview'
+        role='menu'
+        data-accordion='false'>
         {children}
       </ul>
     </nav>

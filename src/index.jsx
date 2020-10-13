@@ -8,5 +8,5 @@ ReactDOM.render(
   <React.StrictMode>
     <DemoApp />
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );

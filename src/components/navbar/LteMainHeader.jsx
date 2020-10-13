@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function LteMainHeader({ children }) {
   return (
-    <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+    <nav className='main-header navbar navbar-expand navbar-white navbar-light'>
       {children}
     </nav>
   );

@@ -4,15 +4,16 @@ import PropTypes from 'prop-types';
 import { NavItem, NavLink } from 'reactstrap';
 import LteIcon from '../LteIcon';
 
-const Badge = ({ badge }) => (badge === '' ? null : <span className="right badge badge-danger">{badge}</span>);
+const Badge = ({ badge }) =>
+  badge === '' ? null : (
+    <span className='right badge badge-danger'>{badge}</span>
+  );
 
 export default function LteNavSidebarItem({ data }) {
-  return data.map(({
-    id, text, href, icon, badge,
-  }) => (
+  return data.map(({ id, text, href, icon, badge }) => (
     <NavItem key={id}>
       <NavLink tag={Link} to={href}>
-        <LteIcon icon={icon} className="nav-icon" />
+        <LteIcon icon={icon} className='nav-icon' />
         <p>
           {text}
           <Badge badge={badge} />
@@ -30,7 +31,7 @@ LteNavSidebarItem.propTypes = {
       href: PropTypes.string,
       icon: PropTypes.string,
       badge: PropTypes.string,
-    }),
+    })
   ),
 };
 LteNavSidebarItem.defaultProps = {

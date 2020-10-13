@@ -8,8 +8,8 @@ import sidebarMenu from '../data/sidebar';
 
 export default function DemoSidebar() {
   return (
-    <LteMainSidebar logo={logo} brandName="AdminLTE 3">
-      <LteSidebarUser avatar={user2} href="#" name="Alexander Pierce" />
+    <LteMainSidebar logo={logo} brandName='AdminLTE 3'>
+      <LteSidebarUser avatar={user2} href='#' name='Alexander Pierce' />
       <LteNavSidebar>
         <LteNavSidebarItem data={sidebarMenu} />
       </LteNavSidebar>

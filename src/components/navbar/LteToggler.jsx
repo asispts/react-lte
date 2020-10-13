@@ -8,9 +8,9 @@ export default function LteToggler({ children }) {
   return (
     <Nav navbar>
       <NavItem>
-        <button className="btn nav-link" data-widget="pushmenu" type="button">
+        <button className='btn nav-link' data-widget='pushmenu' type='button'>
           <LteIcon icon={faBars} />
-          <span className="d-none">toggle</span>
+          <span className='d-none'>toggle</span>
         </button>
       </NavItem>
       {children}

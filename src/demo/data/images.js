@@ -9,7 +9,4 @@ const user6 = require('admin-lte/dist/img/user6-128x128.jpg');
 const user7 = require('admin-lte/dist/img/user7-128x128.jpg');
 const user8 = require('admin-lte/dist/img/user8-128x128.jpg');
 
-export {
-  logo,
-  user1, user2, user3, user4, user5, user6, user7, user8,
-};
+export { logo, user1, user2, user3, user4, user5, user6, user7, user8 };

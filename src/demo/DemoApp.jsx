@@ -15,7 +15,7 @@ export default function DemoApp() {
       <DemoSidebar />
       <ContentWrapper>
         <Switch>
-          <Route exact path="/" component={Dashboard} />
+          <Route exact path='/' component={Dashboard} />
         </Switch>
       </ContentWrapper>
       <MainFooter />
