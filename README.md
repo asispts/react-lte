@@ -1,12 +1,13 @@
 # `react-lte` - AdminLTE v3 template for ReactJS
 
 [![License](https://img.shields.io/github/license/pattisahusiwa/react-lte)](https://github.com/pattisahusiwa/react-lte/blob/master/LICENSE)
-[![gh-pages](https://img.shields.io/github/workflow/status/pattisahusiwa/react-lte/gh-pages%20deploy?label=gh-pages)](https://github.com/pattisahusiwa/react-lte/actions?query=workflow%3A%22gh-pages+deploy%22)
+[![gh-pages](https://github.com/pattisahusiwa/react-lte/workflows/gh-pages/badge.svg)](https://github.com/pattisahusiwa/react-lte/actions?query=workflow%3Agh-pages)
+[![ci](https://github.com/pattisahusiwa/react-lte/workflows/ci/badge.svg)](https://github.com/pattisahusiwa/react-lte/actions?query=workflow%3Aci)
 
-[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/react)]()
-[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/admin-lte)]()
-[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/bootstrap)]()
-[![](https://img.shields.io/github/package-json/dependency-version/pattisahusiwa/react-lte/reactstrap)]()
+[![react](https://img.shields.io/npm/dependency-version/react-lte/react)](https://www.npmjs.com/package/react-lte)
+[![admin-lte](https://img.shields.io/npm/dependency-version/react-lte/admin-lte)](https://www.npmjs.com/package/react-lte)
+[![bootstrap](https://img.shields.io/npm/dependency-version/react-lte/bootstrap)](https://www.npmjs.com/package/react-lte)
+[![reactstrap](https://img.shields.io/npm/dependency-version/react-lte/reactstrap)](https://www.npmjs.com/package/react-lte)
 
 - [`react-lte` - AdminLTE v3 template for ReactJS](#react-lte---adminlte-v3-template-for-reactjs)
   - [Demo](#demo)
