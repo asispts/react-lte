@@ -1,30 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Nav, NavItem } from 'reactstrap';
-import LteIcon from '../LteIcon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavItem } from 'reactstrap';
 
-export default function LteToggler({ children }) {
+export default function LteToggler() {
   return (
-    <Nav navbar>
-      <NavItem>
-        <button className='btn nav-link' data-widget='pushmenu' type='button'>
-          <LteIcon icon={faBars} />
-          <span className='d-none'>toggle</span>
-        </button>
-      </NavItem>
-      {children}
-    </Nav>
+    <NavItem>
+      <button className='btn nav-link' data-widget='pushmenu' type='button'>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+    </NavItem>
   );
 }
-
-LteToggler.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
-};
-
-LteToggler.defaultProps = {
-  children: null,
-};

@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, Navbar, NavItem, NavLink } from 'reactstrap';
 import {
   faExpandArrowsAlt,
   faThLarge,
 } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteMessageNavMenu from '../../components/navbar/LteMessageNavMenu';
 import { messageNavData, notifNavData } from '../data/header';
 import LteNotifNavMenu from '../../components/navbar/LteNotifNavMenu';
-import LteMainHeader from '../../components/navbar/LteMainHeader';
 import LteNavSearch from '../../components/navbar/LteNavSearch';
 import LteToggler from '../../components/navbar/LteToggler';
-import LteIcon from '../../components/LteIcon';
 
 export default function DemoHeader() {
   return (
-    <LteMainHeader>
-      <LteToggler>
+    <Navbar className='main-header navbar-white navbar-light' expand>
+      <Nav navbar>
+        <LteToggler />
         <NavItem className='d-none d-sm-inline-block'>
           <NavLink tag={Link} to='/'>
             Home
@@ -25,7 +25,7 @@ export default function DemoHeader() {
         <NavItem className='d-none d-sm-inline-block'>
           <NavLink href='#'>Contact</NavLink>
         </NavItem>
-      </LteToggler>
+      </Nav>
 
       <LteNavSearch />
 
@@ -34,7 +34,7 @@ export default function DemoHeader() {
         <LteNotifNavMenu data={notifNavData} />
         <NavItem>
           <NavLink tag='button' className='btn' data-widget='fullscreen'>
-            <LteIcon icon={faExpandArrowsAlt} />
+            <FontAwesomeIcon icon={faExpandArrowsAlt} />
           </NavLink>
         </NavItem>
         <NavItem>
@@ -44,10 +44,10 @@ export default function DemoHeader() {
             data-widget='control-sidebar'
             data-slide='true'
           >
-            <LteIcon icon={faThLarge} />
+            <FontAwesomeIcon icon={faThLarge} />
           </NavLink>
         </NavItem>
       </Nav>
-    </LteMainHeader>
+    </Navbar>
   );
 }
