@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { DropdownItem } from 'reactstrap';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faBell as farBell } from '@fortawesome/free-regular-svg-icons';
 import LteNavDropdown from './LteNavDropdown';
 
 const Content = ({ data }) =>
@@ -17,7 +17,7 @@ const Content = ({ data }) =>
 
 export default function LteNotifNavMenu({ data, href }) {
   return (
-    <LteNavDropdown icon={faBell} badgeText='0'>
+    <LteNavDropdown icon={farBell} badgeText='0'>
       <DropdownItem tag='span' header>
         15 Notifications
       </DropdownItem>

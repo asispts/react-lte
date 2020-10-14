@@ -2,7 +2,6 @@ import React from 'react';
 import {
   faAngleLeft,
   faChartPie,
-  faCircle,
   faCopy,
   faEdit,
   faTable,
@@ -10,6 +9,7 @@ import {
   faTh,
   faTree,
 } from '@fortawesome/free-solid-svg-icons';
+import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons';
 import { Badge, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -57,49 +57,49 @@ export default function DemoSidebar() {
           <ul className='nav nav-treeview'>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Top Navigation</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <small>Top Navigation + Sidebar</small>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Boxed</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Fixed Sidebar</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <small>Fixed Sidebar + Custom Area</small>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Fixed Navbar</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Fixed Footer</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Collapsed Sidebar</p>
               </NavLink>
             </NavItem>
@@ -117,19 +117,19 @@ export default function DemoSidebar() {
           <ul className='nav nav-treeview'>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>ChartJS</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Flot</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Inline</p>
               </NavLink>
             </NavItem>
@@ -147,49 +147,49 @@ export default function DemoSidebar() {
           <ul className='nav nav-treeview'>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>General</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Icons</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Buttons</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Sliders</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Modals & Alerts</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Navbar & Tabs</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Timeline</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Ribbons</p>
               </NavLink>
             </NavItem>
@@ -207,25 +207,25 @@ export default function DemoSidebar() {
           <ul className='nav nav-treeview'>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>General Elements</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Advanced Elements</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Editors</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Validation</p>
               </NavLink>
             </NavItem>
@@ -243,19 +243,19 @@ export default function DemoSidebar() {
           <ul className='nav nav-treeview'>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>Simple Tables</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>DataTables</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to='#'>
-                <FontAwesomeIcon icon={faCircle} className='nav-icon' />
+                <FontAwesomeIcon icon={farCircle} className='nav-icon' />
                 <p>jsGrid</p>
               </NavLink>
             </NavItem>

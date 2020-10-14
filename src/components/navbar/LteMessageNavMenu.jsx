@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { faClock, faComments, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
+import {
+  faComments as farComments,
+  faClock as farClock,
+} from '@fortawesome/free-regular-svg-icons';
 import { DropdownItem, Media } from 'reactstrap';
 import LteNavDropdown from './LteNavDropdown';
 import LteIcon from '../LteIcon';
@@ -15,12 +19,12 @@ const Content = ({ data }) =>
             <h3 className='dropdown-item-title'>
               {user}
               <span className='float-right text-sm text-danger'>
-                <LteIcon icon={faStar} />
+                <LteIcon icon={fasStar} />
               </span>
             </h3>
             <p className='text-sm'>{message}</p>
             <p className='text-sm text-muted'>
-              <LteIcon icon={faClock} />
+              <LteIcon icon={farClock} />
               <span className='ml-1'>{date}</span>
             </p>
           </Media>
@@ -32,7 +36,7 @@ const Content = ({ data }) =>
 
 export default function LteMessageNavMenu({ data, href }) {
   return (
-    <LteNavDropdown icon={faComments} badgeText={data.length}>
+    <LteNavDropdown icon={farComments} badgeText={data.length}>
       <Content data={data} />
       <DropdownItem tag='a' href={href} className='dropdown-footer'>
         See All Messages
