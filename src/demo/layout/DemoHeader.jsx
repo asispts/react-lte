@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar, NavItem, NavLink } from 'reactstrap';
-import {
-  faExpandArrowsAlt,
-  faThLarge,
-} from '@fortawesome/free-solid-svg-icons';
+import { faThLarge } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteMessageNavMenu from '../../components/navbar/LteMessageNavMenu';
 import { messageNavData, notifNavData } from '../data/header';
