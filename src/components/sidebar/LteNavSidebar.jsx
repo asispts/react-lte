@@ -8,7 +8,8 @@ export default function LteNavSidebar({ children }) {
         className='nav nav-pills nav-sidebar flex-column'
         data-widget='treeview'
         role='menu'
-        data-accordion='false'>
+        data-accordion='false'
+      >
         {children}
       </ul>
     </nav>

@@ -42,7 +42,8 @@ export default function DemoHeader() {
             tag='button'
             className='btn'
             data-widget='control-sidebar'
-            data-slide='true'>
+            data-slide='true'
+          >
             <LteIcon icon={faThLarge} />
           </NavLink>
         </NavItem>
