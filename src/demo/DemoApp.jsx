@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
+import DemoDashboard from './pages/DemoDashboard';
 import DemoHeader from './layout/DemoHeader';
 import DemoSidebar from './layout/DemoSidebar';
 import ContentWrapper from './layout/ContentWrapper';
@@ -15,7 +15,7 @@ export default function DemoApp() {
       <DemoSidebar />
       <ContentWrapper>
         <Switch>
-          <Route exact path='/' component={Dashboard} />
+          <Route exact path='/' component={DemoDashboard} />
         </Switch>
       </ContentWrapper>
       <MainFooter />
