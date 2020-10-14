@@ -9,9 +9,9 @@ const Badge = ({ badge }) =>
     <span className='right badge badge-danger'>{badge}</span>
   );
 
-export default function LteNavSidebarItem({ data }) {
-  return data.map(({ id, text, href, icon, badge }) => (
-    <NavItem key={id}>
+export default function LteNavItem({ key, text, href, icon, badge }) {
+  return (
+    <NavItem key={key}>
       <NavLink tag={Link} to={href}>
         <LteIcon icon={icon} className='nav-icon' />
         <p>
@@ -20,27 +20,21 @@ export default function LteNavSidebarItem({ data }) {
         </p>
       </NavLink>
     </NavItem>
-  ));
+  );
 }
 
-LteNavSidebarItem.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.ID,
-      text: PropTypes.string,
-      href: PropTypes.string,
-      icon: PropTypes.string,
-      badge: PropTypes.string,
-    })
-  ),
+LteNavItem.propTypes = {
+  key: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  badge: PropTypes.string,
 };
-LteNavSidebarItem.defaultProps = {
-  data: [],
+LteNavItem.defaultProps = {
+  icon: '',
+  badge: '',
 };
 
 Badge.propTypes = {
-  badge: PropTypes.string,
-};
-Badge.defaultProps = {
-  badge: '',
+  badge: PropTypes.string.isRequired,
 };
