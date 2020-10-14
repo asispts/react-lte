@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function LteBrand({ logo, name, alt }) {
+export default function LteBrand({ href, logo, name, alt }) {
   return (
-    <a href='index3.html' className='brand-link'>
+    <a href={href} className='brand-link'>
       <img
         src={logo}
         alt={alt}
@@ -16,12 +16,14 @@ export default function LteBrand({ logo, name, alt }) {
 }
 
 LteBrand.propTypes = {
+  href: PropTypes.string,
   logo: PropTypes.string,
   name: PropTypes.string,
   alt: PropTypes.string,
 };
 
 LteBrand.defaultProps = {
+  href: '#',
   logo: '',
   name: '',
   alt: '',
