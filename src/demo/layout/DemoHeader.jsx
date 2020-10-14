@@ -33,11 +33,6 @@ export default function DemoHeader() {
         <LteMessageNavMenu data={messageNavData} />
         <LteNotifNavMenu data={notifNavData} />
         <NavItem>
-          <NavLink tag='button' className='btn' data-widget='fullscreen'>
-            <FontAwesomeIcon icon={faExpandArrowsAlt} />
-          </NavLink>
-        </NavItem>
-        <NavItem>
           <NavLink
             tag='button'
             className='btn'
