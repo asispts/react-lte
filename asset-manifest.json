@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/react-lte/static/css/main.2e624c3e.chunk.css",
-    "main.js": "/react-lte/static/js/main.5ef54809.chunk.js",
-    "main.js.map": "/react-lte/static/js/main.5ef54809.chunk.js.map",
+    "main.js": "/react-lte/static/js/main.5b486515.chunk.js",
+    "main.js.map": "/react-lte/static/js/main.5b486515.chunk.js.map",
     "runtime-main.js": "/react-lte/static/js/runtime-main.f2806703.js",
     "runtime-main.js.map": "/react-lte/static/js/runtime-main.f2806703.js.map",
-    "static/js/2.2925a1b6.chunk.js": "/react-lte/static/js/2.2925a1b6.chunk.js",
-    "static/js/2.2925a1b6.chunk.js.map": "/react-lte/static/js/2.2925a1b6.chunk.js.map",
+    "static/js/2.710a8762.chunk.js": "/react-lte/static/js/2.710a8762.chunk.js",
+    "static/js/2.710a8762.chunk.js.map": "/react-lte/static/js/2.710a8762.chunk.js.map",
     "index.html": "/react-lte/index.html",
-    "precache-manifest.0be870f68eebe145d79860fa499e22c0.js": "/react-lte/precache-manifest.0be870f68eebe145d79860fa499e22c0.js",
+    "precache-manifest.7c4acc5e0a93e261220b5273d7657196.js": "/react-lte/precache-manifest.7c4acc5e0a93e261220b5273d7657196.js",
     "service-worker.js": "/react-lte/service-worker.js",
     "static/css/main.2e624c3e.chunk.css.map": "/react-lte/static/css/main.2e624c3e.chunk.css.map",
-    "static/js/2.2925a1b6.chunk.js.LICENSE.txt": "/react-lte/static/js/2.2925a1b6.chunk.js.LICENSE.txt",
+    "static/js/2.710a8762.chunk.js.LICENSE.txt": "/react-lte/static/js/2.710a8762.chunk.js.LICENSE.txt",
     "static/media/AdminLTELogo.png": "/react-lte/static/media/AdminLTELogo.28f7e31d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f2806703.js",
-    "static/js/2.2925a1b6.chunk.js",
+    "static/js/2.710a8762.chunk.js",
     "static/css/main.2e624c3e.chunk.css",
-    "static/js/main.5ef54809.chunk.js"
+    "static/js/main.5b486515.chunk.js"
   ]
 }
