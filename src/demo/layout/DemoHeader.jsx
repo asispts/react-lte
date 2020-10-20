@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { Nav, Navbar, NavItem, NavLink } from 'reactstrap';
 import { faThLarge } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { messageNavData, notifNavData } from '../data/header';
-import LteNotifNavMenu from '../../components/navbar/LteNotifNavMenu';
+import messageNavData from '../data/header';
 import LteNavSearch from '../../components/navbar/LteNavSearch';
 import LteToggler from '../../components/navbar/LteToggler';
 import MessageMenu from '../components/MessageMenu';
+import NotificationMenu from '../components/NotificationMenu';
 
 export default function DemoHeader() {
   return (
@@ -28,7 +28,7 @@ export default function DemoHeader() {
 
       <Nav navbar className='ml-auto'>
         <MessageMenu data={messageNavData} />
-        <LteNotifNavMenu data={notifNavData} />
+        <NotificationMenu />
         <NavItem>
           <NavLink
             tag='button'
