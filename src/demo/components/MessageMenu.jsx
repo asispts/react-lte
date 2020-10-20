@@ -42,7 +42,11 @@ const Content = ({ data }) =>
 
 const MessageMenu = ({ data, href }) => {
   return (
-    <LteNavDropdown icon={farComments} badgeText={data.length}>
+    <LteNavDropdown
+      icon={farComments}
+      badgeText={data.length}
+      badgeColor='danger'
+    >
       <Content data={data} />
       <DropdownItem tag='a' href={href} className='dropdown-footer'>
         See All Messages
