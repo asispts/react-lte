@@ -8,6 +8,7 @@ const messageNavData = [
     user: 'Brad Diesel',
     message: 'Call me whenever you can...',
     date: '4 Hours Ago',
+    color: 'danger',
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const messageNavData = [
     user: 'John Pierce',
     message: 'I got your message bro',
     date: '4 Hours Ago',
+    color: 'muted',
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const messageNavData = [
     user: 'Nora Silvester',
     message: 'The subject goes here',
     date: '4 Hours Ago',
+    color: 'warning',
   },
 ];
 

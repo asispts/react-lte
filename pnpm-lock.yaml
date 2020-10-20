@@ -5,6 +5,7 @@ dependencies:
   '@fortawesome/react-fontawesome': 0.1.11_5472724ddad544c900a4fa9c40ae60dc
   admin-lte: 3.0.5
   bootstrap: 4.5.2
+  classnames: 2.2.6
   prop-types: 15.7.2
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
@@ -13171,6 +13172,7 @@ specifiers:
   '@testing-library/user-event': ^12.1.6
   admin-lte: ^3.0.5
   bootstrap: ^4.5.2
+  classnames: ^2.2.6
   eslint-config-airbnb: ^18.2.0
   eslint-config-prettier: ^6.12.0
   eslint-plugin-prettier: ^3.1.4
