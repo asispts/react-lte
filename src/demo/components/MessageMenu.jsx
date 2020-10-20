@@ -26,18 +26,15 @@ const defaultProps = {
 
 const Content = ({ data }) =>
   data.map(({ id, href, avatar, user, message, date, color }) => (
-    <div key={id}>
-      <DropdownItem tag='a' href={href}>
-        <LteMessageNavItem
-          avatar={avatar}
-          user={user}
-          message={message}
-          date={date}
-          textColor={color}
-        />
-      </DropdownItem>
-      <DropdownItem divider />
-    </div>
+    <LteMessageNavItem
+      avatar={avatar}
+      user={user}
+      message={message}
+      date={date}
+      textColor={color}
+      href={href}
+      key={id}
+    />
   ));
 
 const MessageMenu = ({ data, href }) => {
