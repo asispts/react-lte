@@ -8,7 +8,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["./mock-api/**/*.js", "**/*.test.js", "**/*.test.jsx"]
+        "devDependencies": ["./mock-api/**/*.js", "**/*.test.js", "**/*.test.jsx", "src/setupTests.js"]
       }
     ]
   }
