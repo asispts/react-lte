@@ -109,8 +109,11 @@ jobs:
         if: steps.npm-packages-cache.outputs.cache-hit != 'true'
         run: pnpm install
 
-      - name: Run unit test and generate coverage report
-        run: pnpm test -- --coverage
+      - name: Run unit test
+        run: pnpm test
+
+      - name: Generate coverage report
+        run: pnpm run coverage
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
