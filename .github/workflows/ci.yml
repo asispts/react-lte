@@ -74,3 +74,40 @@ jobs:
 
       - name: Linter check
         run: pnpm run lint
+
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14.x]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install PNPM
+        uses: pnpm/action-setup@v1.2.1
+        with:
+          version: 5.x.x
+
+      - name: Cache NPM packages
+        id: npm-packages-cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      - name: Install dependencies
+        if: steps.npm-packages-cache.outputs.cache-hit != 'true'
+        run: pnpm install
+
+      - name: Run unit test
+        run: pnpm test
