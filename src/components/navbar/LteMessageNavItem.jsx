@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { DropdownItem, Media } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -7,23 +8,22 @@ import { faClock } from '@fortawesome/free-regular-svg-icons';
 import LteText from '../LteText';
 
 const propTypes = {
+  href: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   user: PropTypes.string.isRequired,
   message: PropTypes.node.isRequired,
   date: PropTypes.string.isRequired,
   textColor: PropTypes.string,
-  href: PropTypes.string,
 };
 
 const defaultProps = {
   textColor: 'muted',
-  href: '#',
 };
 
-const LteMessageNavItem = ({ avatar, user, message, date, textColor, href }) => {
+const LteMessageNavItem = ({ href, avatar, user, message, date, textColor }) => {
   return (
     <>
-      <DropdownItem tag='a' href={href}>
+      <DropdownItem tag={Link} to={href}>
         <Media>
           <img src={avatar} alt='' className='img-size-50 mr-3 img-circle' />
           <Media body>
