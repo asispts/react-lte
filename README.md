@@ -1,9 +1,10 @@
 # `react-lte` - AdminLTE v3 template for ReactJS
 
+[![npm](https://img.shields.io/npm/v/react-lte)](https://www.npmjs.com/package/react-lte)
 [![License](https://img.shields.io/github/license/pattisahusiwa/react-lte)](https://github.com/pattisahusiwa/react-lte/blob/master/LICENSE)
 [![gh-pages](https://github.com/pattisahusiwa/react-lte/workflows/gh-pages/badge.svg)](https://github.com/pattisahusiwa/react-lte/actions?query=workflow%3Agh-pages)
 [![ci](https://github.com/pattisahusiwa/react-lte/workflows/ci/badge.svg)](https://github.com/pattisahusiwa/react-lte/actions?query=workflow%3Aci)
-[![npm](https://img.shields.io/npm/v/react-lte)](https://www.npmjs.com/package/react-lte)
+[![Coverage Status](https://coveralls.io/repos/github/pattisahusiwa/react-lte/badge.svg?branch=master)](https://coveralls.io/github/pattisahusiwa/react-lte?branch=master)
 
 [![react](https://img.shields.io/npm/dependency-version/react-lte/react)](https://www.npmjs.com/package/react-lte)
 [![admin-lte](https://img.shields.io/npm/dependency-version/react-lte/admin-lte)](https://www.npmjs.com/package/react-lte)
