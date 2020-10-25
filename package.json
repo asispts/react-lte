@@ -65,8 +65,8 @@
     "eject": "react-scripts eject",
     "cs": "prettier -c .",
     "cs:fix": "prettier -w .",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint": "eslint --ext .jsx --ext .js .",
+    "lint:fix": "eslint --fix --ext .jsx --ext .js ."
   },
   "eslintConfig": {
     "extends": "react-app"

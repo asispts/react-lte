@@ -1,18 +1,14 @@
 {
-  "extends": ["react-app", "airbnb", "prettier"],
+  "root": true,
+  "extends": ["react-app", "airbnb", "prettier", "prettier/react"],
   "plugins": ["prettier", "simple-import-sort"],
   "rules": {
+    "max-len": [2, { "code": 120 }],
     "prettier/prettier": ["error"],
     "import/no-extraneous-dependencies": [
       "error",
       {
         "devDependencies": ["./mock-api/**/*.js", "**/*.test.js", "**/*.test.jsx"]
-      }
-    ],
-    "max-len": [
-      "warn",
-      {
-        "code": 120
       }
     ]
   }

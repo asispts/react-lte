@@ -24,7 +24,21 @@ const defaultProps = {
   href: '#',
 };
 
-const Content = ({ data }) => data.map(({ id, href, avatar, user, message, date, color }) => <LteMessageNavItem avatar={avatar} user={user} message={message} date={date} textColor={color} href={href} key={id} />);
+const Content = ({ data }) => {
+  return data.map(({ id, href, avatar, user, message, date, color }) => {
+    return (
+      <LteMessageNavItem
+        avatar={avatar}
+        user={user}
+        message={message}
+        date={date}
+        textColor={color}
+        href={href}
+        key={id}
+      />
+    );
+  });
+};
 
 const MessageMenu = ({ data, href }) => {
   return (
