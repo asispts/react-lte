@@ -32,7 +32,7 @@ export default function DemoSidebar() {
         </NavItem>
 
         <NavItem>
-          <NavLink tag={Link} to='#'>
+          <NavLink tag={Link} to='/widgets'>
             <FontAwesomeIcon icon={faTh} className='nav-icon' />
             <p>
               Widgets
