@@ -13,17 +13,17 @@ import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons';
 import { Badge, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import LteNavSidebar from '../../components/sidebar/LteNavSidebar';
 import { logo, user2 } from '../data/images';
 import MainSidebar from '../components/sidebar/MainSidebar';
 import SidebarUser from '../components/sidebar/SidebarUser';
+import NavSidebar from '../components/sidebar/NavSidebar';
 
 export default function DemoSidebar() {
   return (
     <MainSidebar logo={logo} brandName='AdminLTE 3'>
       <SidebarUser avatar={user2} href='#' name='Alexander Pierce' />
 
-      <LteNavSidebar>
+      <NavSidebar>
         <NavItem>
           <NavLink tag={Link} to='/'>
             <FontAwesomeIcon icon={faTachometerAlt} className='nav-icon' />
@@ -261,7 +261,7 @@ export default function DemoSidebar() {
             </NavItem>
           </ul>
         </NavItem>
-      </LteNavSidebar>
+      </NavSidebar>
     </MainSidebar>
   );
 }
