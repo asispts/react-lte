@@ -8,10 +8,7 @@ const propTypes = {
   color: PropTypes.string,
   className: PropTypes.string,
   size: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };
 
 const defaultProps = {

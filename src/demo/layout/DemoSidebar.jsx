@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  faAngleLeft,
-  faChartPie,
-  faCopy,
-  faEdit,
-  faTable,
-  faTachometerAlt,
-  faTh,
-  faTree,
-} from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faChartPie, faCopy, faEdit, faTable, faTachometerAlt, faTh, faTree } from '@fortawesome/free-solid-svg-icons';
 import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons';
 import { Badge, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';

@@ -24,26 +24,11 @@ const defaultProps = {
   href: '#',
 };
 
-const Content = ({ data }) =>
-  data.map(({ id, href, avatar, user, message, date, color }) => (
-    <LteMessageNavItem
-      avatar={avatar}
-      user={user}
-      message={message}
-      date={date}
-      textColor={color}
-      href={href}
-      key={id}
-    />
-  ));
+const Content = ({ data }) => data.map(({ id, href, avatar, user, message, date, color }) => <LteMessageNavItem avatar={avatar} user={user} message={message} date={date} textColor={color} href={href} key={id} />);
 
 const MessageMenu = ({ data, href }) => {
   return (
-    <LteNavDropdown
-      icon={farComments}
-      badgeText={data.length}
-      badgeColor='danger'
-    >
+    <LteNavDropdown icon={farComments} badgeText={data.length} badgeColor='danger'>
       <Content data={data} />
       <DropdownItem tag='a' href={href} className='dropdown-footer'>
         See All Messages

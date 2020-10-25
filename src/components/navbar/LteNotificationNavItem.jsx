@@ -5,11 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteText from '../LteText';
 
 const propTypes = {
-  icon: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.array,
-    PropTypes.string,
-  ]).isRequired,
+  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.array, PropTypes.string]).isRequired,
   message: PropTypes.node.isRequired,
   date: PropTypes.string.isRequired,
   href: PropTypes.string,

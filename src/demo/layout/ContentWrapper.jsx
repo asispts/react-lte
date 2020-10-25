@@ -6,10 +6,7 @@ export default function ContentWrapper({ children }) {
 }
 
 ContentWrapper.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };
 
 ContentWrapper.defaultProps = {

@@ -30,12 +30,7 @@ export default function DemoHeader() {
         <MessageMenu data={messageNavData} />
         <NotificationMenu />
         <NavItem>
-          <NavLink
-            tag='button'
-            className='btn'
-            data-widget='control-sidebar'
-            data-slide='true'
-          >
+          <NavLink tag='button' className='btn' data-widget='control-sidebar' data-slide='true'>
             <FontAwesomeIcon icon={faThLarge} />
           </NavLink>
         </NavItem>

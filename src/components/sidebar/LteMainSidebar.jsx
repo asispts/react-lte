@@ -14,10 +14,7 @@ export default function LteMainSidebar({ logo, brandName, children }) {
 LteMainSidebar.propTypes = {
   logo: PropTypes.string,
   brandName: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };
 
 LteMainSidebar.defaultProps = {

@@ -20,14 +20,7 @@ const defaultProps = {
   href: '#',
 };
 
-const LteMessageNavItem = ({
-  avatar,
-  user,
-  message,
-  date,
-  textColor,
-  href,
-}) => {
+const LteMessageNavItem = ({ avatar, user, message, date, textColor, href }) => {
   return (
     <>
       <DropdownItem tag='a' href={href}>

@@ -37,15 +37,7 @@ const defaultProps = {
 
 const Content = ({ data }) => {
   return data.map(({ id, icon, message, date }) => {
-    return (
-      <LteNotificationNavItem
-        id={id}
-        icon={icon}
-        message={message}
-        date={date}
-        key={id}
-      />
-    );
+    return <LteNotificationNavItem id={id} icon={icon} message={message} date={date} key={id} />;
   });
 };
 

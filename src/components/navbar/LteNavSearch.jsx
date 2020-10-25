@@ -7,12 +7,7 @@ export default function LteNavSearch() {
   return (
     <Form inline className='ml-3'>
       <InputGroup size='sm'>
-        <Input
-          className='form-control-navbar'
-          type='search'
-          placeholder='Search'
-          aria-label='Search'
-        />
+        <Input className='form-control-navbar' type='search' placeholder='Search' aria-label='Search' />
         <InputGroupAddon addonType='append'>
           <button className='btn btn-navbar' type='submit'>
             <FontAwesomeIcon icon={faSearch} />
