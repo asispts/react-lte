@@ -92,7 +92,9 @@
   ],
   "jest": {
     "collectCoverageFrom": [
-      "src/components/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!**/__tests__/**",
+      "!**/index.jsx"
     ]
   }
 }
