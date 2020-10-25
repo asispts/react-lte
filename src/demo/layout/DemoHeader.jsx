@@ -27,8 +27,8 @@ export default function DemoHeader() {
       <NavSearch />
 
       <Nav navbar className='ml-auto'>
-        <MessageMenu data={messageNavData} />
-        <NotificationMenu />
+        <MessageMenu href='/message' data={messageNavData} />
+        <NotificationMenu href='/notification' />
         <NavItem>
           <NavLink tag='button' className='btn' data-widget='control-sidebar' data-slide='true'>
             <FontAwesomeIcon icon={faThLarge} />
