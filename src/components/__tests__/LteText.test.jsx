@@ -37,14 +37,15 @@ test('Should render component with size sm and color danger', () => {
   const dom = <LteText color='danger' size='sm' />;
   const { container } = render(dom);
 
-  expect(container.querySelector('p').getAttribute('class')).toEqual('text-danger text-sm');
+  expect(container.querySelector('p').getAttribute('class')).toContain('text-danger');
+  expect(container.querySelector('p').getAttribute('class')).toContain('text-sm');
 });
 
 test('Should render component with additional classes', () => {
-  const dom = <LteText color='danger' size='sm' className='text-muted' />;
+  const dom = <LteText color='danger' size='sm' className='custom-class' />;
   const { container } = render(dom);
 
-  expect(container.querySelector('p').getAttribute('class')).toEqual('text-muted text-danger text-sm');
+  expect(container.querySelector('p').getAttribute('class')).toContain('custom-class');
 });
 
 test('Should render component with children', () => {
