@@ -3,7 +3,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Form, Input, InputGroup, InputGroupAddon } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function LteNavSearch() {
+const NavSearch = () => {
   return (
     <Form inline className='ml-3'>
       <InputGroup size='sm'>
@@ -17,4 +17,6 @@ export default function LteNavSearch() {
       </InputGroup>
     </Form>
   );
-}
+};
+
+export default NavSearch;
