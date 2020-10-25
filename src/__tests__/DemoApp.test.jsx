@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import DemoApp from '../DemoApp';
+import DemoApp from '../../demo/DemoApp';
 
 test('Should render without crash', () => {
   const dom = <DemoApp />;

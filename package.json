@@ -56,18 +56,20 @@
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "node-sass": "^4.14.1",
     "prettier": "^2.1.2",
-    "pretty-quick": "^3.0.2"
+    "pretty-quick": "^3.0.2",
+    "react-app-rewire-alias": "^0.1.6",
+    "react-app-rewired": "^2.1.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "cs": "prettier -c .",
     "cs:fix": "prettier -w .",
     "lint": "eslint --ext .jsx --ext .js .",
     "lint:fix": "eslint --fix --ext .jsx --ext .js .",
-    "coverage": "pnpm test -- --coverage --testPathIgnorePatterns=/src/demo/"
+    "coverage": "pnpm test -- --coverage --testPathIgnorePatterns=/src/__tests__/"
   },
   "eslintConfig": {
     "extends": "react-app"

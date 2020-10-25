@@ -1,6 +1,6 @@
 import React from 'react';
-import LteContent from '../../components/LteContent';
-import LteContentHeader from '../../components/LteContentHeader';
+import LteContent from '../../src/components/LteContent';
+import LteContentHeader from '../../src/components/LteContentHeader';
 
 export default function DemoDashboard() {
   return (

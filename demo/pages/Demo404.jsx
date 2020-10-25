@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import { Button, Form, Input, InputGroup, InputGroupAddon } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import LteContentHeader from '../../components/LteContentHeader';
-import LteText from '../../components/LteText';
-import LteContent from '../../components/LteContent';
+import LteContentHeader from '../../src/components/LteContentHeader';
+import LteText from '../../src/components/LteText';
+import LteContent from '../../src/components/LteContent';
 
 const Demo404 = () => {
   return (

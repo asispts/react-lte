@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import LteMessageNavItem from '../LteMessageNavItem';
-import { user1 } from '../../../demo/data/images';
+import { user1 } from '../../../../demo/data/images';
 
 const avatar = 'user1-128x128.jpg';
 const user = 'Username';

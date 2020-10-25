@@ -4,8 +4,8 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { DropdownItem } from 'reactstrap';
 import { faEnvelope, faFile, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import LteNavDropdown from '../../components/navbar/LteNavDropdown';
-import LteNotificationNavItem from '../../components/navbar/LteNotificationNavItem';
+import LteNavDropdown from '../../src/components/navbar/LteNavDropdown';
+import LteNotificationNavItem from '../../src/components/navbar/LteNotificationNavItem';
 
 const demoData = [
   {

@@ -4,7 +4,7 @@ import { Nav, Navbar, NavItem, NavLink } from 'reactstrap';
 import { faThLarge } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import messageNavData from '../data/header';
-import LteToggler from '../../components/navbar/LteToggler';
+import LteToggler from '../../src/components/navbar/LteToggler';
 import MessageMenu from '../components/MessageMenu';
 import NotificationMenu from '../components/NotificationMenu';
 import NavSearch from '../components/navbar/NavSearch';

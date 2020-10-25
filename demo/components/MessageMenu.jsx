@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { faComments as farComments } from '@fortawesome/free-regular-svg-icons';
 import { DropdownItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import LteNavDropdown from '../../components/navbar/LteNavDropdown';
-import LteMessageNavItem from '../../components/navbar/LteMessageNavItem';
+import LteNavDropdown from '../../src/components/navbar/LteNavDropdown';
+import LteMessageNavItem from '../../src/components/navbar/LteMessageNavItem';
 
 const propTypes = {
   data: PropTypes.arrayOf(

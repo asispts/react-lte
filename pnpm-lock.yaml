@@ -23,6 +23,8 @@ devDependencies:
   node-sass: 4.14.1
   prettier: 2.1.2
   pretty-quick: 3.0.2_prettier@2.1.2
+  react-app-rewire-alias: 0.1.6_react-app-rewired@2.1.6
+  react-app-rewired: 2.1.6_react-scripts@3.4.3
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -10628,6 +10630,24 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-OfBnObtnGgLGfweORmdZbyEz+3dgVePQBb3zipiaDsMHV1NpWm0rDFYIVXFV/AK+x4VIIfWHhrdMIeoTLyRr2g==
+  /react-app-rewire-alias/0.1.6_react-app-rewired@2.1.6:
+    dependencies:
+      react-app-rewired: 2.1.6_react-scripts@3.4.3
+    dev: true
+    peerDependencies:
+      react-app-rewired: 1 || ^2
+    resolution:
+      integrity: sha512-RWI9danv1hw2YJQ1LrAImmB4g1TpGe56RZUbfyhZGS2dwpz2s1tz9JlA2HszSdNUUqcjat+Qcw544/Wz/zE8kw==
+  /react-app-rewired/2.1.6_react-scripts@3.4.3:
+    dependencies:
+      react-scripts: 3.4.3_node-sass@4.14.1
+      semver: 5.7.1
+    dev: true
+    hasBin: true
+    peerDependencies:
+      react-scripts: '>=2.1.3'
+    resolution:
+      integrity: sha512-06flj0kK5tf/RN4naRv/sn6j3sQd7rsURoRLKLpffXDzJeNiAaTNic+0I8Basojy5WDwREkTqrMLewSAjcb13w==
   /react-dev-utils/10.2.1:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -13380,6 +13400,8 @@ specifiers:
   pretty-quick: ^3.0.2
   prop-types: ^15.7.2
   react: ^16.13.1
+  react-app-rewire-alias: ^0.1.6
+  react-app-rewired: ^2.1.6
   react-dom: ^16.13.1
   react-router-dom: ^5.2.0
   react-scripts: 3.4.3
