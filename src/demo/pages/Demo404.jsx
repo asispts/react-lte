@@ -1,27 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import LteContentHeader from '../../components/LteContentHeader';
 
 const Demo404 = () => {
   return (
     <>
-      <section className='content-header'>
-        <div className='container-fluid'>
-          <div className='row mb-2'>
-            <div className='col-sm-6'>
-              <h1 className='m-0'>404 Error Page</h1>
-            </div>
-            <div className='col-sm-6'>
-              <ol className='breadcrumb float-sm-right'>
-                <li className='breadcrumb-item'>
-                  <a href='/'>Home</a>
-                </li>
-                <li className='breadcrumb-item active'>404 Error Page</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
+      <LteContentHeader title='404 Error Page' />
       <section className='content'>
         <div className='error-page'>
           <h2 className='headline text-warning'> 404</h2>
