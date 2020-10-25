@@ -14,14 +14,14 @@ import { Badge, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LteNavSidebar from '../../components/sidebar/LteNavSidebar';
-import LteSidebarUser from '../../components/sidebar/LteSidebarUser';
 import { logo, user2 } from '../data/images';
 import MainSidebar from '../components/sidebar/MainSidebar';
+import SidebarUser from '../components/sidebar/SidebarUser';
 
 export default function DemoSidebar() {
   return (
     <MainSidebar logo={logo} brandName='AdminLTE 3'>
-      <LteSidebarUser avatar={user2} href='#' name='Alexander Pierce' />
+      <SidebarUser avatar={user2} href='#' name='Alexander Pierce' />
 
       <LteNavSidebar>
         <NavItem>
