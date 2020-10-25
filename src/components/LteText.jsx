@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { mapToCssModules, tagPropType } from 'reactstrap/src/utils';
+import tagPropType from '../utils/Types';
 
 const propTypes = {
   tag: tagPropType,
@@ -24,7 +24,7 @@ const LteText = (props) => {
 
   const textColor = color === '' ? undefined : `text-${color}`;
   const sizeClass = size === '' ? undefined : `text-${size}`;
-  const classes = mapToCssModules(classNames(className, textColor, sizeClass));
+  const classes = classNames(className, textColor, sizeClass);
 
   return <Tag className={classes}>{children}</Tag>;
 };
