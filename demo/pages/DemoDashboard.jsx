@@ -1,10 +1,14 @@
 import { faChartBar, faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
 import {
+  faArrowUp,
+  faBars,
   faChartPie,
   faCloudDownloadAlt,
   faCog,
   faComments,
+  faDownload,
   faMinus,
+  faRedo,
   faShoppingBasket,
   faShoppingCart,
   faTag,
@@ -360,6 +364,55 @@ export default function DemoDashboard() {
             <LteInfoBox icon={faHeart} text='Mentions' number='92,050' bgColor='success' />
             <LteInfoBox icon={faCloudDownloadAlt} text='Downloads' number='114,381' bgColor='danger' />
             <LteInfoBox icon={faComment} text='Direct Messages' number='163,921' bgColor='info' />
+            <Card>
+              <CardHeader className='border-0'>
+                <CardTitle>Online Store Overview</CardTitle>
+                <LteCardTools>
+                  <Button className='btn-tool' color=''>
+                    <FontAwesomeIcon icon={faDownload} />
+                  </Button>
+                  <Button color='' className='btn-tool'>
+                    <FontAwesomeIcon icon={faBars} />
+                  </Button>
+                </LteCardTools>
+              </CardHeader>
+              <CardBody>
+                <div className='d-flex justify-content-between align-items-center border-bottom mb-3'>
+                  <p className='text-success text-xl'>
+                    <FontAwesomeIcon icon={faRedo} />
+                  </p>
+                  <p className='d-flex flex-column text-right'>
+                    <span className='font-weight-bold'>
+                      <FontAwesomeIcon icon={faArrowUp} className='text-success' />
+                      12%
+                    </span>
+                    <span className='text-muted'>CONVERSION RATE</span>
+                  </p>
+                </div>
+                <div className='d-flex justify-content-between align-items-center border-bottom mb-3'>
+                  <p className='text-warning text-xl'>
+                    <FontAwesomeIcon icon={faShoppingCart} />
+                  </p>
+                  <p className='d-flex flex-column text-right'>
+                    <span className='font-weight-bold'>
+                      <FontAwesomeIcon icon={faArrowUp} className='text-warning' /> 0.8%
+                    </span>
+                    <span className='text-muted'>SALES RATE</span>
+                  </p>
+                </div>
+                <div className='d-flex justify-content-between align-items-center mb-0'>
+                  <p className='text-danger text-xl'>
+                    <FontAwesomeIcon icon={faUsers} />
+                  </p>
+                  <p className='d-flex flex-column text-right'>
+                    <span className='font-weight-bold'>
+                      <FontAwesomeIcon icon={faArrowUp} className='text-danger' /> 1%
+                    </span>
+                    <span className='text-muted'>REGISTRATION RATE</span>
+                  </p>
+                </div>
+              </CardBody>
+            </Card>
           </Col>
         </Row>
       </LteContent>
