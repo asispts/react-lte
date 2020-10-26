@@ -1,9 +1,11 @@
-import { faChartBar } from '@fortawesome/free-regular-svg-icons';
+import { faChartBar, faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
 import {
   faChartPie,
+  faCloudDownloadAlt,
   faCog,
   faShoppingBasket,
   faShoppingCart,
+  faTag,
   faThumbsUp,
   faUserPlus,
   faUsers,
@@ -37,17 +39,27 @@ export default function DemoDashboard() {
 
         <Row>
           <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faCog} text='CPU Traffic' number='10%' color='info' />
+            <LteInfoBox icon={faCog} text='CPU Traffic' number='10%' iconColor='info' />
           </Col>
           <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faThumbsUp} text='Likes' number='41,410' color='danger' />
+            <LteInfoBox icon={faThumbsUp} text='Likes' number='41,410' iconColor='danger' />
           </Col>
           <div className='clearfix hidden-md-up' />
           <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faShoppingCart} text='Sales' number='760' color='success' />
+            <LteInfoBox icon={faShoppingCart} text='Sales' number='760' iconColor='success' />
           </Col>
           <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faUsers} text='New Members' number='2,000' color='warning' />
+            <LteInfoBox icon={faUsers} text='New Members' number='2,000' iconColor='warning' />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col lg='8' />
+          <Col lg='4'>
+            <LteInfoBox icon={faTag} text='Inventory' number='5,200' bgColor='warning' />
+            <LteInfoBox icon={faHeart} text='Mentions' number='92,050' bgColor='success' />
+            <LteInfoBox icon={faCloudDownloadAlt} text='Downloads' number='114,381' bgColor='danger' />
+            <LteInfoBox icon={faComment} text='Direct Messages' number='163,921' bgColor='info' />
           </Col>
         </Row>
       </LteContent>

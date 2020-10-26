@@ -11,13 +11,15 @@ test('Should render component without crash', () => {
   const { container } = render(dom);
 
   expect(container.firstChild.nodeName).toEqual('DIV');
+  expect(container.firstChild.getAttribute('class')).toEqual('info-box');
   expect(container.querySelector('.info-box-icon > svg')).toHaveClass('fa-users');
+  expect(container.querySelector('.info-box-icon').getAttribute('class')).toEqual('info-box-icon');
   expect(container.querySelector('.info-box-text')).toHaveTextContent(text);
   expect(container.querySelector('.info-box-number')).toHaveTextContent(number);
 });
 
-test('Should render component with bg color', () => {
-  const dom = <LteInfoBox icon={faUsers} text={text} number={number} color='danger' />;
+test('Should render component with icon color', () => {
+  const dom = <LteInfoBox icon={faUsers} text={text} number={number} iconColor='danger' />;
   const { container } = render(dom);
 
   expect(container.querySelector('.info-box-icon')).toHaveClass('bg-danger');
@@ -28,4 +30,11 @@ test('Should render component with custom tag', () => {
   const { container } = render(dom);
 
   expect(container.firstChild.nodeName).toEqual('SECTION');
+});
+
+test('Should render component with bg color', () => {
+  const dom = <LteInfoBox icon={faUsers} text={text} number={number} bgColor='danger' />;
+  const { container } = render(dom);
+
+  expect(container.firstChild).toHaveClass('bg-danger');
 });

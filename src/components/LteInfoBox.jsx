@@ -9,21 +9,26 @@ const propTypes = {
   text: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   tag: tagPropType,
-  color: PropTypes.string,
+  iconColor: PropTypes.string,
+  bgColor: PropTypes.string,
 };
 
 const defaultProps = {
   tag: 'div',
-  color: '',
+  iconColor: '',
+  bgColor: '',
 };
 
-const LteInfoBox = ({ tag: Tag, icon, text, number, color }) => {
-  const bgColor = color === '' ? undefined : `bg-${color}`;
-  const classes = classNames('info-box-icon elevation-1', bgColor);
+const LteInfoBox = ({ tag: Tag, icon, text, number, iconColor, bgColor }) => {
+  const bgClass = bgColor === '' ? undefined : `bg-${bgColor}`;
+  const boxClasses = classNames('info-box', bgClass);
+
+  const iconClass = iconColor === '' ? undefined : `elevation-1 bg-${iconColor}`;
+  const iconClasses = classNames('info-box-icon', iconClass);
 
   return (
-    <Tag className='info-box'>
-      <span className={classes}>
+    <Tag className={boxClasses}>
+      <span className={iconClasses}>
         <FontAwesomeIcon icon={icon} />
       </span>
       <div className='info-box-content'>
