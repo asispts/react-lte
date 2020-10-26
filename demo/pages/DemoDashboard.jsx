@@ -42,6 +42,7 @@ import LteDirectChat from '../../src/components/directchat/LteDirectChat';
 import LteDirectChatContacts from '../../src/components/directchat/LteDirectChatContacts';
 import LteContactsList from '../../src/components/directchat/LteContactsList';
 import LteContactsListItem from '../../src/components/directchat/LteContactsListItem';
+import LteCardTools from '../../src/components/card/LteCardTools';
 
 export default function DemoDashboard() {
   return (
@@ -84,14 +85,14 @@ export default function DemoDashboard() {
             <Card>
               <CardHeader className='border-transparent'>
                 <CardTitle>Latest Orders</CardTitle>
-                <div className='card-tools'>
-                  <button type='button' className='btn btn-tool' data-card-widget='collapse'>
+                <LteCardTools>
+                  <Button color='' className='btn-tool' data-card-widget='collapse'>
                     <FontAwesomeIcon icon={faMinus} />
-                  </button>
-                  <button type='button' className='btn btn-tool' data-card-widget='remove'>
+                  </Button>
+                  <Button color='' className='btn-tool' data-card-widget='remove'>
                     <FontAwesomeIcon icon={faTimes} />
-                  </button>
-                </div>
+                  </Button>
+                </LteCardTools>
               </CardHeader>
               <CardBody className='p-0'>
                 <Table responsive>
@@ -213,7 +214,7 @@ export default function DemoDashboard() {
                 <LteDirectChat color='warning'>
                   <CardHeader>
                     <CardTitle>Direct Chat</CardTitle>
-                    <div className='card-tools'>
+                    <LteCardTools>
                       <Badge color='warning' data-toggle='tooltip' title='3 New Messages'>
                         3
                       </Badge>
@@ -232,7 +233,7 @@ export default function DemoDashboard() {
                       <Button color='' className='btn-tool' data-card-widget='remove'>
                         <FontAwesomeIcon icon={faTimes} />
                       </Button>
-                    </div>
+                    </LteCardTools>
                   </CardHeader>
                   <CardBody>
                     <LteDirectChatMessages>
