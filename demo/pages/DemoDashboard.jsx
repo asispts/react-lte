@@ -56,21 +56,6 @@ export default function DemoDashboard() {
       <LteContentHeader title='Dashboard' />
       <LteContent>
         <Row>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='150' message='New Orders' href='/info' icon={faShoppingBasket} color='info' />
-          </Col>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='53%' message='Bounce Rate' href='/info' icon={faChartBar} color='success' />
-          </Col>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='44' message='User Registrations' href='/info' icon={faUserPlus} color='warning' />
-          </Col>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='65' message='Unique Visitors' href='/info' icon={faChartPie} color='danger' />
-          </Col>
-        </Row>
-
-        <Row>
           <Col xs='12' sm='6' md='3'>
             <LteInfoBox icon={faCog} text='CPU Traffic' number='10%' iconColor='info' />
           </Col>
@@ -83,6 +68,21 @@ export default function DemoDashboard() {
           </Col>
           <Col xs='12' sm='6' md='3'>
             <LteInfoBox icon={faUsers} text='New Members' number='2,000' iconColor='warning' />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col lg='3' xs='6'>
+            <LteSmallBox title='150' message='New Orders' href='/info' icon={faShoppingBasket} color='info' />
+          </Col>
+          <Col lg='3' xs='6'>
+            <LteSmallBox title='53%' message='Bounce Rate' href='/info' icon={faChartBar} color='success' />
+          </Col>
+          <Col lg='3' xs='6'>
+            <LteSmallBox title='44' message='User Registrations' href='/info' icon={faUserPlus} color='warning' />
+          </Col>
+          <Col lg='3' xs='6'>
+            <LteSmallBox title='65' message='Unique Visitors' href='/info' icon={faChartPie} color='danger' />
           </Col>
         </Row>
 
