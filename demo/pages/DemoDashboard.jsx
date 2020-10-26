@@ -35,7 +35,7 @@ import LteContent from '../../src/components/LteContent';
 import LteContentHeader from '../../src/components/LteContentHeader';
 import LteInfoBox from '../../src/components/LteInfoBox';
 import LteSmallBox from '../../src/components/LteSmallBox';
-import { user1, user3, user5, user6, user7, user8 } from '../data/images';
+import { user1, user2, user3, user4, user5, user6, user7, user8 } from '../data/images';
 import LteDirectChatMsg from '../../src/components/directchat/LteDirectChatMsg';
 import LteDirectChatMessages from '../../src/components/directchat/LteDirectChatMessages';
 import LteDirectChat from '../../src/components/directchat/LteDirectChat';
@@ -43,6 +43,8 @@ import LteDirectChatContacts from '../../src/components/directchat/LteDirectChat
 import LteContactsList from '../../src/components/directchat/LteContactsList';
 import LteContactsListItem from '../../src/components/directchat/LteContactsListItem';
 import LteCardTools from '../../src/components/card/LteCardTools';
+import LteUsersList from '../../src/components/userslist/LteUsersList';
+import LteUsersListItem from '../../src/components/userslist/LteUsersListItem';
 
 export default function DemoDashboard() {
   return (
@@ -323,7 +325,34 @@ export default function DemoDashboard() {
                   </CardFooter>
                 </LteDirectChat>
               </Col>
-              <Col lg='6' />
+              <Col lg='6'>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Latest Members</CardTitle>
+                    <LteCardTools>
+                      <Badge color='danger'>8 New Members</Badge>
+                      <Button className='btn-tool' color='' data-card-widget='collapse'>
+                        <FontAwesomeIcon icon={faMinus} />
+                      </Button>
+                      <Button color='' className='btn-tool' data-card-widget='remove'>
+                        <FontAwesomeIcon icon={faTimes} />
+                      </Button>
+                    </LteCardTools>
+                  </CardHeader>
+                  <CardBody className='p-0'>
+                    <LteUsersList>
+                      <LteUsersListItem image={user1} href='/users' name='Alexander Pierce' date='Today' />
+                      <LteUsersListItem image={user8} href='/users' name='Norman' date='Yesterday' />
+                      <LteUsersListItem image={user7} href='/users' name='Jane' date='12 Jan' />
+                      <LteUsersListItem image={user6} href='/users' name='John' date='12 Jan' />
+                      <LteUsersListItem image={user2} href='/users' name='Alexander' date='13 Jan' />
+                      <LteUsersListItem image={user5} href='/users' name='Sarah' date='14 Jan' />
+                      <LteUsersListItem image={user4} href='/users' name='Nora' date='15 Jan' />
+                      <LteUsersListItem image={user3} href='/users' name='Nadia' date='15 Jan' />
+                    </LteUsersList>
+                  </CardBody>
+                </Card>
+              </Col>
             </Row>
           </Col>
           <Col lg='4'>
