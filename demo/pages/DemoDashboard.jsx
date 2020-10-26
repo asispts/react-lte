@@ -3,6 +3,7 @@ import {
   faChartPie,
   faCloudDownloadAlt,
   faCog,
+  faComments,
   faMinus,
   faShoppingBasket,
   faShoppingCart,
@@ -14,11 +15,33 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Badge, Card, CardBody, CardHeader, CardTitle, Col, Row, Table } from 'reactstrap';
+import {
+  Badge,
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+  Col,
+  Form,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  Row,
+  Table,
+} from 'reactstrap';
 import LteContent from '../../src/components/LteContent';
 import LteContentHeader from '../../src/components/LteContentHeader';
 import LteInfoBox from '../../src/components/LteInfoBox';
 import LteSmallBox from '../../src/components/LteSmallBox';
+import { user1, user3, user5, user6, user7, user8 } from '../data/images';
+import LteDirectChatMsg from '../../src/components/directchat/LteDirectChatMsg';
+import LteDirectChatMessages from '../../src/components/directchat/LteDirectChatMessages';
+import LteDirectChat from '../../src/components/directchat/LteDirectChat';
+import LteDirectChatContacts from '../../src/components/directchat/LteDirectChatContacts';
+import LteContactsList from '../../src/components/directchat/LteContactsList';
+import LteContactsListItem from '../../src/components/directchat/LteContactsListItem';
 
 export default function DemoDashboard() {
   return (
@@ -184,6 +207,123 @@ export default function DemoDashboard() {
                 </Table>
               </CardBody>
             </Card>
+
+            <Row>
+              <Col lg='6'>
+                <LteDirectChat color='warning'>
+                  <CardHeader>
+                    <CardTitle>Direct Chat</CardTitle>
+                    <div className='card-tools'>
+                      <Badge color='warning' data-toggle='tooltip' title='3 New Messages'>
+                        3
+                      </Badge>
+                      <Button className='btn-tool' color='' data-card-widget='collapse'>
+                        <FontAwesomeIcon icon={faMinus} />
+                      </Button>
+                      <Button
+                        color=''
+                        className='btn-tool'
+                        data-toggle='tooltip'
+                        title='Contacts'
+                        data-widget='chat-pane-toggle'
+                      >
+                        <FontAwesomeIcon icon={faComments} />
+                      </Button>
+                      <Button color='' className='btn-tool' data-card-widget='remove'>
+                        <FontAwesomeIcon icon={faTimes} />
+                      </Button>
+                    </div>
+                  </CardHeader>
+                  <CardBody>
+                    <LteDirectChatMessages>
+                      <LteDirectChatMsg
+                        name='Alexander Pierce'
+                        date='23 Jan 2:00 pm'
+                        image={user1}
+                        message="Is this template really for free? That's unbelievable!"
+                      />
+                      <LteDirectChatMsg
+                        right
+                        name='Sarah Bullock'
+                        date='23 Jan 2:05 pm'
+                        image={user3}
+                        message='You better believe it!'
+                      />
+                      <LteDirectChatMsg
+                        name='Alexander Pierce'
+                        date='23 Jan 5:37 pm'
+                        image={user1}
+                        message='Working with AdminLTE on a great new app! Wanna join?'
+                      />
+                      <LteDirectChatMsg
+                        right
+                        name='Sarah Bullock'
+                        date='23 Jan 6:10 pm'
+                        image={user3}
+                        message='I would love to.'
+                      />
+                    </LteDirectChatMessages>
+                    <LteDirectChatContacts>
+                      <LteContactsList>
+                        <LteContactsListItem
+                          href='/contacts'
+                          image={user1}
+                          name='Count Dracula'
+                          date='2/28/2015'
+                          message='How have you been? I was...'
+                        />
+                        <LteContactsListItem
+                          href='/contacts'
+                          image={user7}
+                          name='Sarah Doe'
+                          date='2/23/2015'
+                          message='I will be waiting for...'
+                        />
+                        <LteContactsListItem
+                          href='/contacts'
+                          image={user3}
+                          name='Nadia Jolie'
+                          date='2/20/2015'
+                          message="I'll call you back at..."
+                        />
+                        <LteContactsListItem
+                          href='/contacts'
+                          image={user5}
+                          name='Nora S. Vans'
+                          date='2/10/2015'
+                          message='Where is your new...'
+                        />
+                        <LteContactsListItem
+                          href='/contacts'
+                          image={user6}
+                          name='John K.'
+                          date='1/27/2015'
+                          message='Can I take a look at...'
+                        />
+                        <LteContactsListItem
+                          href='/contacts'
+                          image={user8}
+                          name='Kenneth M.'
+                          date='1/4/2015'
+                          message='Never mind I found...'
+                        />
+                      </LteContactsList>
+                    </LteDirectChatContacts>
+                  </CardBody>
+                  <CardFooter>
+                    <Form>
+                      <InputGroup>
+                        <Input placeholder='Type Message ...' />
+                        <InputGroupAddon addonType='append'>
+                          <Button color='warning'>Send</Button>
+                        </InputGroupAddon>
+                      </InputGroup>
+                    </Form>
+                  </CardFooter>
+                </LteDirectChat>
+              </Col>
+              <Col lg='6' />
+            </Row>
           </Col>
           <Col lg='4'>
             <LteInfoBox icon={faTag} text='Inventory' number='5,200' bgColor='warning' />
