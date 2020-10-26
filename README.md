@@ -26,6 +26,8 @@
 
 Visit https://pattisahusiwa.github.io/react-lte to see the live demo.
 
+![screenshot](./screenshot.png)
+
 ## Installation
 
 You can add this package to your project by using `npm`, `yarn`, or `pnpm`.
