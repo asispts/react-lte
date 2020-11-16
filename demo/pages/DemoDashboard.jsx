@@ -1,18 +1,15 @@
-import { faChartBar, faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
 import {
   faArrowUp,
   faBars,
-  faChartPie,
   faCloudDownloadAlt,
   faComments,
   faDownload,
   faMinus,
   faRedo,
-  faShoppingBasket,
   faShoppingCart,
   faTag,
   faTimes,
-  faUserPlus,
   faUsers,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -48,12 +45,23 @@ import LteCardTools from '../../src/components/card/LteCardTools';
 import LteUsersList from '../../src/components/userslist/LteUsersList';
 import LteUsersListItem from '../../src/components/userslist/LteUsersListItem';
 import dashboardInfoBoxData from '../data/dashboard/dashboardInfoBoxData';
+import dashboardSmallboxData from '../data/dashboard/dashboardSmallboxData';
 
 const DashboardInfoBox = ({ data }) => {
   return data.map(({ icon, text, number, color }) => {
     return (
       <Col xs='12' sm='6' md='3'>
         <LteInfoBox icon={icon} text={text} number={number} iconColor={color} />
+      </Col>
+    );
+  });
+};
+
+const DashboardSmallbox = ({ data }) => {
+  return data.map(({ title, message, icon, color }) => {
+    return (
+      <Col lg='3' xs='6'>
+        <LteSmallBox title={title} message={message} href='/info' icon={icon} color={color} />
       </Col>
     );
   });
@@ -68,18 +76,7 @@ export default function DemoDashboard() {
           <DashboardInfoBox data={dashboardInfoBoxData} />
         </Row>
         <Row>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='150' message='New Orders' href='/info' icon={faShoppingBasket} color='info' />
-          </Col>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='53%' message='Bounce Rate' href='/info' icon={faChartBar} color='success' />
-          </Col>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='44' message='User Registrations' href='/info' icon={faUserPlus} color='warning' />
-          </Col>
-          <Col lg='3' xs='6'>
-            <LteSmallBox title='65' message='Unique Visitors' href='/info' icon={faChartPie} color='danger' />
-          </Col>
+          <DashboardSmallbox data={dashboardSmallboxData} />
         </Row>
 
         <Row>
