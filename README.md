@@ -14,9 +14,6 @@
 - [`react-lte` - AdminLTE v3 template for ReactJS](#react-lte---adminlte-v3-template-for-reactjs)
   - [Demo](#demo)
   - [Installation](#installation)
-    - [Install with `npm`](#install-with-npm)
-    - [Install with `yarn`](#install-with-yarn)
-    - [Install with `pnpm`](#install-with-pnpm)
   - [Changelog](#changelog)
   - [Contributing](#contributing)
     - [How to contribute](#how-to-contribute)
@@ -30,25 +27,12 @@ Visit https://pattisahusiwa.github.io/react-lte to see the live demo.
 
 ## Installation
 
-You can add this package to your project by using `npm`, `yarn`, or `pnpm`.
-
-### Install with `npm`
-
+This project is still under development. Hence the package on in [npmjs.com](https://www.npmjs.com/package/react-lte) is not really up to date. If you want to use this library, you need to install it directly from github repo. In `pnpm`, this can be achieved by running
 ```bash
-npm add react-lte --save
+pnpm add pattisahusiwa/react-lte
 ```
 
-### Install with `yarn`
-
-```bash
-yarn add react-lte
-```
-
-### Install with `pnpm`
-
-```bash
-pnpm add react-lte
-```
+For other package managers, please consult the related documentation on how to install a package directly from github.
 
 ## Changelog
 
