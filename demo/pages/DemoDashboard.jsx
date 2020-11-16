@@ -46,6 +46,7 @@ import LteUsersList from '../../src/components/userslist/LteUsersList';
 import LteUsersListItem from '../../src/components/userslist/LteUsersListItem';
 import dashboardInfoBoxData from '../data/dashboard/dashboardInfoBoxData';
 import dashboardSmallboxData from '../data/dashboard/dashboardSmallboxData';
+import dashboardLatestOrderData from '../data/dashboard/dashboardLatestOrderData';
 
 const DashboardInfoBox = ({ data }) => {
   return data.map(({ icon, text, number, color }) => {
@@ -63,6 +64,27 @@ const DashboardSmallbox = ({ data }) => {
       <Col lg='3' xs='6'>
         <LteSmallBox title={title} message={message} href='/info' icon={icon} color={color} />
       </Col>
+    );
+  });
+};
+
+const LatestOrder = ({ data }) => {
+  return data.map(({ orderID, item, status, statusColor, popularity }) => {
+    return (
+      <tr>
+        <td>{orderID}</td>
+        <td>{item}</td>
+        <td>
+          <Badge tag='span' color={statusColor}>
+            {status}
+          </Badge>
+        </td>
+        <td>
+          <div className='sparkbar' data-color='#00a65a' data-height='20'>
+            {popularity}
+          </div>
+        </td>
+      </tr>
     );
   });
 };
@@ -105,104 +127,7 @@ export default function DemoDashboard() {
                   </thead>
 
                   <tbody>
-                    <tr>
-                      <td>OR9842</td>
-                      <td>Call of Duty IV</td>
-                      <td>
-                        <Badge tag='span' color='success'>
-                          Shipped
-                        </Badge>
-                      </td>
-                      <td>
-                        <div className='sparkbar' data-color='#00a65a' data-height='20'>
-                          90,80,90,-70,61,-83,63
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>OR1848</td>
-                      <td>Samsung Smart TV</td>
-                      <td>
-                        <Badge tag='span' color='warning'>
-                          Pending
-                        </Badge>
-                      </td>
-                      <td>
-                        <div className='sparkbar' data-color='#f39c12' data-height='20'>
-                          90,80,-90,70,61,-83,68
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>OR7429</td>
-                      <td>iPhone 6 Plus</td>
-                      <td>
-                        <Badge tag='span' color='danger'>
-                          Delivered
-                        </Badge>
-                      </td>
-                      <td>
-                        <div className='sparkbar' data-color='#f56954' data-height='20'>
-                          90,-80,90,70,-61,83,63
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>OR7429</td>
-                      <td>Samsung Smart TV</td>
-                      <td>
-                        <Badge tag='span' color='info'>
-                          Processing
-                        </Badge>
-                      </td>
-                      <td>
-                        <div className='sparkbar' data-color='#00c0ef' data-height='20'>
-                          90,80,-90,70,-61,83,63
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>OR1848</td>
-                      <td>Samsung Smart TV</td>
-                      <td>
-                        <Badge tag='span' color='warning'>
-                          Pending
-                        </Badge>
-                      </td>
-                      <td>
-                        <div className='sparkbar' data-color='#f39c12' data-height='20'>
-                          90,80,-90,70,61,-83,68
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>OR7429</td>
-                      <td>iPhone 6 Plus</td>
-                      <td>
-                        <Badge tag='span' color='danger'>
-                          Delivered
-                        </Badge>
-                      </td>
-                      <td>
-                        <div className='sparkbar' data-color='#f56954' data-height='20'>
-                          90,-80,90,70,-61,83,63
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>OR9842</td>
-                      <td>Call of Duty IV</td>
-                      <td>
-                        <Badge tag='span' color='success'>
-                          Shipped
-                        </Badge>
-                      </td>
-                      <td>
-                        <div className='sparkbar' data-color='#00a65a' data-height='20'>
-                          90,80,90,-70,61,-83,63
-                        </div>
-                      </td>
-                    </tr>
+                    <LatestOrder data={dashboardLatestOrderData} />
                   </tbody>
                 </Table>
               </CardBody>
