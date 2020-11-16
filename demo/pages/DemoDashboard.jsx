@@ -4,7 +4,6 @@ import {
   faBars,
   faChartPie,
   faCloudDownloadAlt,
-  faCog,
   faComments,
   faDownload,
   faMinus,
@@ -12,7 +11,6 @@ import {
   faShoppingBasket,
   faShoppingCart,
   faTag,
-  faThumbsUp,
   faTimes,
   faUserPlus,
   faUsers,
@@ -49,6 +47,17 @@ import LteContactsListItem from '../../src/components/directchat/LteContactsList
 import LteCardTools from '../../src/components/card/LteCardTools';
 import LteUsersList from '../../src/components/userslist/LteUsersList';
 import LteUsersListItem from '../../src/components/userslist/LteUsersListItem';
+import dashboardInfoBoxData from '../data/dashboard/dashboardInfoBoxData';
+
+const DashboardInfoBox = ({ data }) => {
+  return data.map(({ icon, text, number, color }) => {
+    return (
+      <Col xs='12' sm='6' md='3'>
+        <LteInfoBox icon={icon} text={text} number={number} iconColor={color} />
+      </Col>
+    );
+  });
+};
 
 export default function DemoDashboard() {
   return (
@@ -56,21 +65,8 @@ export default function DemoDashboard() {
       <LteContentHeader title='Dashboard' />
       <LteContent>
         <Row>
-          <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faCog} text='CPU Traffic' number='10%' iconColor='info' />
-          </Col>
-          <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faThumbsUp} text='Likes' number='41,410' iconColor='danger' />
-          </Col>
-          <div className='clearfix hidden-md-up' />
-          <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faShoppingCart} text='Sales' number='760' iconColor='success' />
-          </Col>
-          <Col xs='12' sm='6' md='3'>
-            <LteInfoBox icon={faUsers} text='New Members' number='2,000' iconColor='warning' />
-          </Col>
+          <DashboardInfoBox data={dashboardInfoBoxData} />
         </Row>
-
         <Row>
           <Col lg='3' xs='6'>
             <LteSmallBox title='150' message='New Orders' href='/info' icon={faShoppingBasket} color='info' />

@@ -7,6 +7,8 @@ import ContentWrapper from './layout/ContentWrapper';
 import MainFooter from './layout/MainFooter';
 import Demo404 from './pages/Demo404';
 
+import './data/IconLib';
+
 const getBasename = () => `/${process.env.PUBLIC_URL.split('/').pop()}`;
 
 export default function DemoApp() {
