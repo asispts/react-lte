@@ -28,6 +28,7 @@ Visit https://pattisahusiwa.github.io/react-lte to see the live demo.
 ## Installation
 
 This project is still under development. Hence the package on in [npmjs.com](https://www.npmjs.com/package/react-lte) is not really up to date. If you want to use this library, you need to install it directly from github repo. In `pnpm`, this can be achieved by running
+
 ```bash
 pnpm add pattisahusiwa/react-lte
 ```
