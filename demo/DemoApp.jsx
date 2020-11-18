@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import DemoDashboard from './pages/DemoDashboard';
+import DemoDashboard from './pages/dashboard/DemoDashboard';
 import DemoHeader from './layout/DemoHeader';
 import DemoSidebar from './layout/DemoSidebar';
 import ContentWrapper from './layout/ContentWrapper';

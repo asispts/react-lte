@@ -30,24 +30,24 @@ import {
   Row,
   Table,
 } from 'reactstrap';
-import LteContent from '../../src/components/LteContent';
-import LteContentHeader from '../../src/components/LteContentHeader';
-import LteInfoBox from '../../src/components/LteInfoBox';
-import LteSmallBox from '../../src/components/LteSmallBox';
-import { user1, user2, user3, user4, user5, user6, user7, user8 } from '../data/images';
-import LteDirectChatMsg from '../../src/components/directchat/LteDirectChatMsg';
-import LteDirectChatMessages from '../../src/components/directchat/LteDirectChatMessages';
-import LteDirectChat from '../../src/components/directchat/LteDirectChat';
-import LteDirectChatContacts from '../../src/components/directchat/LteDirectChatContacts';
-import LteContactsList from '../../src/components/directchat/LteContactsList';
-import LteContactsListItem from '../../src/components/directchat/LteContactsListItem';
-import LteCardTools from '../../src/components/card/LteCardTools';
-import LteUsersList from '../../src/components/userslist/LteUsersList';
-import LteUsersListItem from '../../src/components/userslist/LteUsersListItem';
-import dashboardInfoBoxData from '../data/dashboard/dashboardInfoBoxData';
-import dashboardSmallboxData from '../data/dashboard/dashboardSmallboxData';
-import dashboardLatestOrderData from '../data/dashboard/dashboardLatestOrderData';
-import { ChatMessages, ChatContacts } from '../data/dashboard/dashboardDirectChatData';
+import LteContent from '../../../src/components/LteContent';
+import LteContentHeader from '../../../src/components/LteContentHeader';
+import LteInfoBox from '../../../src/components/LteInfoBox';
+import LteSmallBox from '../../../src/components/LteSmallBox';
+import { user1, user2, user3, user4, user5, user6, user7, user8 } from '../../data/images';
+import LteDirectChatMsg from '../../../src/components/directchat/LteDirectChatMsg';
+import LteDirectChatMessages from '../../../src/components/directchat/LteDirectChatMessages';
+import LteDirectChat from '../../../src/components/directchat/LteDirectChat';
+import LteDirectChatContacts from '../../../src/components/directchat/LteDirectChatContacts';
+import LteContactsList from '../../../src/components/directchat/LteContactsList';
+import LteContactsListItem from '../../../src/components/directchat/LteContactsListItem';
+import LteCardTools from '../../../src/components/card/LteCardTools';
+import LteUsersList from '../../../src/components/userslist/LteUsersList';
+import LteUsersListItem from '../../../src/components/userslist/LteUsersListItem';
+import dashboardInfoBoxData from '../../data/dashboard/dashboardInfoBoxData';
+import dashboardSmallboxData from '../../data/dashboard/dashboardSmallboxData';
+import dashboardLatestOrderData from '../../data/dashboard/dashboardLatestOrderData';
+import { ChatMessages, ChatContacts } from '../../data/dashboard/dashboardDirectChatData';
 
 const DashboardInfoBox = ({ data }) => {
   return data.map(({ icon, text, number, color }) => {
