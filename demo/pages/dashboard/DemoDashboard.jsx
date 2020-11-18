@@ -28,7 +28,6 @@ import {
   InputGroup,
   InputGroupAddon,
   Row,
-  Table,
 } from 'reactstrap';
 import LteContent from '../../../src/components/LteContent';
 import LteContentHeader from '../../../src/components/LteContentHeader';
@@ -43,31 +42,10 @@ import LteContactsListItem from '../../../src/components/directchat/LteContactsL
 import LteCardTools from '../../../src/components/card/LteCardTools';
 import LteUsersList from '../../../src/components/userslist/LteUsersList';
 import LteUsersListItem from '../../../src/components/userslist/LteUsersListItem';
-import dashboardLatestOrderData from '../../data/dashboard/dashboardLatestOrderData';
 import { ChatMessages, ChatContacts } from '../../data/dashboard/dashboardDirectChatData';
 import InfoboxTop from './components/InfoboxTop';
 import Smallbox from './components/Smallbox';
-
-const LatestOrder = ({ data }) => {
-  return data.map(({ orderID, item, status, statusColor, popularity }) => {
-    return (
-      <tr>
-        <td>{orderID}</td>
-        <td>{item}</td>
-        <td>
-          <Badge tag='span' color={statusColor}>
-            {status}
-          </Badge>
-        </td>
-        <td>
-          <div className='sparkbar' data-color='#00a65a' data-height='20'>
-            {popularity}
-          </div>
-        </td>
-      </tr>
-    );
-  });
-};
+import LatestOrder from './components/LatestOrder';
 
 const DirectChatMsg = ({ data }) => {
   return data.map(({ name, date, image, message }) => {
@@ -91,35 +69,7 @@ export default function DemoDashboard() {
 
         <Row>
           <Col lg='8'>
-            <Card>
-              <CardHeader className='border-transparent'>
-                <CardTitle>Latest Orders</CardTitle>
-                <LteCardTools>
-                  <Button color='' className='btn-tool' data-card-widget='collapse'>
-                    <FontAwesomeIcon icon={faMinus} />
-                  </Button>
-                  <Button color='' className='btn-tool' data-card-widget='remove'>
-                    <FontAwesomeIcon icon={faTimes} />
-                  </Button>
-                </LteCardTools>
-              </CardHeader>
-              <CardBody className='p-0'>
-                <Table responsive>
-                  <thead>
-                    <tr>
-                      <th>Order ID</th>
-                      <th>Item</th>
-                      <th>Status</th>
-                      <th>Popularity</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <LatestOrder data={dashboardLatestOrderData} />
-                  </tbody>
-                </Table>
-              </CardBody>
-            </Card>
+            <LatestOrder />
 
             <Row>
               <Col lg='6'>
