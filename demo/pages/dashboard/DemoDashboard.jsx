@@ -3,7 +3,6 @@ import {
   faArrowUp,
   faBars,
   faCloudDownloadAlt,
-  faComments,
   faDownload,
   faMinus,
   faRedo,
@@ -14,50 +13,18 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-  Col,
-  Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  Row,
-} from 'reactstrap';
+import { Badge, Button, Card, CardBody, CardHeader, CardTitle, Col, Row } from 'reactstrap';
 import LteContent from '../../../src/components/LteContent';
 import LteContentHeader from '../../../src/components/LteContentHeader';
 import LteInfoBox from '../../../src/components/LteInfoBox';
 import { user1, user2, user3, user4, user5, user6, user7, user8 } from '../../data/images';
-import LteDirectChatMsg from '../../../src/components/directchat/LteDirectChatMsg';
-import LteDirectChatMessages from '../../../src/components/directchat/LteDirectChatMessages';
-import LteDirectChat from '../../../src/components/directchat/LteDirectChat';
-import LteDirectChatContacts from '../../../src/components/directchat/LteDirectChatContacts';
-import LteContactsList from '../../../src/components/directchat/LteContactsList';
-import LteContactsListItem from '../../../src/components/directchat/LteContactsListItem';
 import LteCardTools from '../../../src/components/card/LteCardTools';
 import LteUsersList from '../../../src/components/userslist/LteUsersList';
 import LteUsersListItem from '../../../src/components/userslist/LteUsersListItem';
-import { ChatMessages, ChatContacts } from '../../data/dashboard/dashboardDirectChatData';
 import InfoboxTop from './components/InfoboxTop';
 import Smallbox from './components/Smallbox';
 import LatestOrder from './components/LatestOrder';
-
-const DirectChatMsg = ({ data }) => {
-  return data.map(({ name, date, image, message }) => {
-    return <LteDirectChatMsg name={name} date={date} image={image} message={message} />;
-  });
-};
-
-const DirectChatContacts = ({ data }) => {
-  return data.map(({ href, image, name, date, message }) => {
-    return <LteContactsListItem href={href} image={image} name={name} date={date} message={message} />;
-  });
-};
+import DirectChat from './components/DirectChat';
 
 export default function DemoDashboard() {
   return (
@@ -73,51 +40,7 @@ export default function DemoDashboard() {
 
             <Row>
               <Col lg='6'>
-                <LteDirectChat color='warning'>
-                  <CardHeader>
-                    <CardTitle>Direct Chat</CardTitle>
-                    <LteCardTools>
-                      <Badge color='warning' data-toggle='tooltip' title='3 New Messages'>
-                        3
-                      </Badge>
-                      <Button className='btn-tool' color='' data-card-widget='collapse'>
-                        <FontAwesomeIcon icon={faMinus} />
-                      </Button>
-                      <Button
-                        color=''
-                        className='btn-tool'
-                        data-toggle='tooltip'
-                        title='Contacts'
-                        data-widget='chat-pane-toggle'
-                      >
-                        <FontAwesomeIcon icon={faComments} />
-                      </Button>
-                      <Button color='' className='btn-tool' data-card-widget='remove'>
-                        <FontAwesomeIcon icon={faTimes} />
-                      </Button>
-                    </LteCardTools>
-                  </CardHeader>
-                  <CardBody>
-                    <LteDirectChatMessages>
-                      <DirectChatMsg data={ChatMessages} />
-                    </LteDirectChatMessages>
-                    <LteDirectChatContacts>
-                      <LteContactsList>
-                        <DirectChatContacts data={ChatContacts} />
-                      </LteContactsList>
-                    </LteDirectChatContacts>
-                  </CardBody>
-                  <CardFooter>
-                    <Form>
-                      <InputGroup>
-                        <Input placeholder='Type Message ...' />
-                        <InputGroupAddon addonType='append'>
-                          <Button color='warning'>Send</Button>
-                        </InputGroupAddon>
-                      </InputGroup>
-                    </Form>
-                  </CardFooter>
-                </LteDirectChat>
+                <DirectChat />
               </Col>
               <Col lg='6'>
                 <Card>
