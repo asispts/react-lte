@@ -44,20 +44,10 @@ import LteContactsListItem from '../../../src/components/directchat/LteContactsL
 import LteCardTools from '../../../src/components/card/LteCardTools';
 import LteUsersList from '../../../src/components/userslist/LteUsersList';
 import LteUsersListItem from '../../../src/components/userslist/LteUsersListItem';
-import dashboardInfoBoxData from '../../data/dashboard/dashboardInfoBoxData';
 import dashboardSmallboxData from '../../data/dashboard/dashboardSmallboxData';
 import dashboardLatestOrderData from '../../data/dashboard/dashboardLatestOrderData';
 import { ChatMessages, ChatContacts } from '../../data/dashboard/dashboardDirectChatData';
-
-const DashboardInfoBox = ({ data }) => {
-  return data.map(({ icon, text, number, color }) => {
-    return (
-      <Col xs='12' sm='6' md='3'>
-        <LteInfoBox icon={icon} text={text} number={number} iconColor={color} />
-      </Col>
-    );
-  });
-};
+import InfoboxTop from './components/InfoboxTop';
 
 const DashboardSmallbox = ({ data }) => {
   return data.map(({ title, message, icon, color }) => {
@@ -107,9 +97,7 @@ export default function DemoDashboard() {
     <>
       <LteContentHeader title='Dashboard' />
       <LteContent>
-        <Row>
-          <DashboardInfoBox data={dashboardInfoBoxData} />
-        </Row>
+        <InfoboxTop />
         <Row>
           <DashboardSmallbox data={dashboardSmallboxData} />
         </Row>
