@@ -47,6 +47,7 @@ import LteUsersListItem from '../../src/components/userslist/LteUsersListItem';
 import dashboardInfoBoxData from '../data/dashboard/dashboardInfoBoxData';
 import dashboardSmallboxData from '../data/dashboard/dashboardSmallboxData';
 import dashboardLatestOrderData from '../data/dashboard/dashboardLatestOrderData';
+import { ChatMessages, ChatContacts } from '../data/dashboard/dashboardDirectChatData';
 
 const DashboardInfoBox = ({ data }) => {
   return data.map(({ icon, text, number, color }) => {
@@ -86,6 +87,18 @@ const LatestOrder = ({ data }) => {
         </td>
       </tr>
     );
+  });
+};
+
+const DirectChatMsg = ({ data }) => {
+  return data.map(({ name, date, image, message }) => {
+    return <LteDirectChatMsg name={name} date={date} image={image} message={message} />;
+  });
+};
+
+const DirectChatContacts = ({ data }) => {
+  return data.map(({ href, image, name, date, message }) => {
+    return <LteContactsListItem href={href} image={image} name={name} date={date} message={message} />;
   });
 };
 
@@ -161,77 +174,11 @@ export default function DemoDashboard() {
                   </CardHeader>
                   <CardBody>
                     <LteDirectChatMessages>
-                      <LteDirectChatMsg
-                        name='Alexander Pierce'
-                        date='23 Jan 2:00 pm'
-                        image={user1}
-                        message="Is this template really for free? That's unbelievable!"
-                      />
-                      <LteDirectChatMsg
-                        right
-                        name='Sarah Bullock'
-                        date='23 Jan 2:05 pm'
-                        image={user3}
-                        message='You better believe it!'
-                      />
-                      <LteDirectChatMsg
-                        name='Alexander Pierce'
-                        date='23 Jan 5:37 pm'
-                        image={user1}
-                        message='Working with AdminLTE on a great new app! Wanna join?'
-                      />
-                      <LteDirectChatMsg
-                        right
-                        name='Sarah Bullock'
-                        date='23 Jan 6:10 pm'
-                        image={user3}
-                        message='I would love to.'
-                      />
+                      <DirectChatMsg data={ChatMessages} />
                     </LteDirectChatMessages>
                     <LteDirectChatContacts>
                       <LteContactsList>
-                        <LteContactsListItem
-                          href='/contacts'
-                          image={user1}
-                          name='Count Dracula'
-                          date='2/28/2015'
-                          message='How have you been? I was...'
-                        />
-                        <LteContactsListItem
-                          href='/contacts'
-                          image={user7}
-                          name='Sarah Doe'
-                          date='2/23/2015'
-                          message='I will be waiting for...'
-                        />
-                        <LteContactsListItem
-                          href='/contacts'
-                          image={user3}
-                          name='Nadia Jolie'
-                          date='2/20/2015'
-                          message="I'll call you back at..."
-                        />
-                        <LteContactsListItem
-                          href='/contacts'
-                          image={user5}
-                          name='Nora S. Vans'
-                          date='2/10/2015'
-                          message='Where is your new...'
-                        />
-                        <LteContactsListItem
-                          href='/contacts'
-                          image={user6}
-                          name='John K.'
-                          date='1/27/2015'
-                          message='Can I take a look at...'
-                        />
-                        <LteContactsListItem
-                          href='/contacts'
-                          image={user8}
-                          name='Kenneth M.'
-                          date='1/4/2015'
-                          message='Never mind I found...'
-                        />
+                        <DirectChatContacts data={ChatContacts} />
                       </LteContactsList>
                     </LteDirectChatContacts>
                   </CardBody>
