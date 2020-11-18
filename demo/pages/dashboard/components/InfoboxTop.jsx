@@ -1,6 +1,5 @@
 import React from 'react';
-import Col from 'reactstrap/lib/Col';
-import Row from 'reactstrap/lib/Row';
+import { Row, Col } from 'reactstrap';
 import LteInfoBox from '../../../../src/components/LteInfoBox';
 
 const data = [
