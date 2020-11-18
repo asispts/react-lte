@@ -33,7 +33,6 @@ import {
 import LteContent from '../../../src/components/LteContent';
 import LteContentHeader from '../../../src/components/LteContentHeader';
 import LteInfoBox from '../../../src/components/LteInfoBox';
-import LteSmallBox from '../../../src/components/LteSmallBox';
 import { user1, user2, user3, user4, user5, user6, user7, user8 } from '../../data/images';
 import LteDirectChatMsg from '../../../src/components/directchat/LteDirectChatMsg';
 import LteDirectChatMessages from '../../../src/components/directchat/LteDirectChatMessages';
@@ -44,20 +43,10 @@ import LteContactsListItem from '../../../src/components/directchat/LteContactsL
 import LteCardTools from '../../../src/components/card/LteCardTools';
 import LteUsersList from '../../../src/components/userslist/LteUsersList';
 import LteUsersListItem from '../../../src/components/userslist/LteUsersListItem';
-import dashboardSmallboxData from '../../data/dashboard/dashboardSmallboxData';
 import dashboardLatestOrderData from '../../data/dashboard/dashboardLatestOrderData';
 import { ChatMessages, ChatContacts } from '../../data/dashboard/dashboardDirectChatData';
 import InfoboxTop from './components/InfoboxTop';
-
-const DashboardSmallbox = ({ data }) => {
-  return data.map(({ title, message, icon, color }) => {
-    return (
-      <Col lg='3' xs='6'>
-        <LteSmallBox title={title} message={message} href='/info' icon={icon} color={color} />
-      </Col>
-    );
-  });
-};
+import Smallbox from './components/Smallbox';
 
 const LatestOrder = ({ data }) => {
   return data.map(({ orderID, item, status, statusColor, popularity }) => {
@@ -98,9 +87,7 @@ export default function DemoDashboard() {
       <LteContentHeader title='Dashboard' />
       <LteContent>
         <InfoboxTop />
-        <Row>
-          <DashboardSmallbox data={dashboardSmallboxData} />
-        </Row>
+        <Smallbox />
 
         <Row>
           <Col lg='8'>
