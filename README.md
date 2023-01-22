@@ -21,7 +21,7 @@
 
 ## Demo
 
-Visit https://pattisahusiwa.github.io/react-lte to see the live demo.
+Visit https://asispts.github.io/react-lte/ to see the live demo.
 
 ![screenshot](./screenshot.png)
 
