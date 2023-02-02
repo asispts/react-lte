@@ -1,11 +1,13 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import DemoDashboard from './pages/DemoDashboard';
+import DemoDashboard from './pages/dashboard/DemoDashboard';
 import DemoHeader from './layout/DemoHeader';
 import DemoSidebar from './layout/DemoSidebar';
 import ContentWrapper from './layout/ContentWrapper';
 import MainFooter from './layout/MainFooter';
 import Demo404 from './pages/Demo404';
+
+import './data/IconLib';
 
 const getBasename = () => `/${process.env.PUBLIC_URL.split('/').pop()}`;
 
